@@ -11,7 +11,7 @@ import (
 
 func handleErr(err error) {
 	if err != nil {
-		panic(err)
+		//fmt.Println(err)
 	}
 }
 
@@ -27,25 +27,35 @@ func main() {
 	handleErr(err)
 	fmt.Println("current height: ", latestBlock.Height)
 
-	// fetch block events of topshot Market.MomentPurchased events for the past 1000 blocks
+	blockSize := 20
+	for i := 0; i <= 160; i+=blockSize {
+		fmt.Println("current block: ", int64(latestBlock.Height) - int64(i))
+		fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentListed")
+		fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentPriceChanged")
+	}
+}
+
+func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, typeStr string) {
+	// fetch block events of topshot Market.MomentListed/PriceChanged events for the past 1000 blocks
 	blockEvents, err := flowClient.GetEventsForHeightRange(context.Background(), client.EventRangeQuery{
-		Type:        "A.c1e4f4f4c4257510.Market.MomentPurchased",
-		StartHeight: latestBlock.Height - 500,
-		EndHeight:   latestBlock.Height,
+		Type:        typeStr,
+		StartHeight: uint64(startBlock),
+		EndHeight:   uint64(endBlock),
 	})
 	handleErr(err)
 
 	for _, blockEvent := range blockEvents {
-		for _, purchaseEvent := range blockEvent.Events {
-			// loop through the Market.MomentPurchased events in this blockEvent
-			e := topshot.MomentPurchasedEvent(purchaseEvent.Value)
-			fmt.Println(e)
-			saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height-1, *e.Seller(), e.Id())
-			handleErr(err)
-			fmt.Println(saleMoment)
-			fmt.Printf("transactionID: %s, block height: %d\n",
-				purchaseEvent.TransactionID.String(), blockEvent.Height)
-			fmt.Println()
+		for _, sellerEvent := range blockEvent.Events {
+			// loop through the Market.MomentListed/PriceChanged events in this blockEvent
+			//fmt.Println(sellerEvent.Value)
+			e := topshot.MomentListed(sellerEvent.Value)
+			if(e.Price() < 35){
+				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), e.Id())
+				handleErr(err)
+				if(e.Price()< 9 || (saleMoment != nil && (saleMoment.SerialNumber() <= 500 || (e.Price() < 25 && saleMoment.SerialNumber() <= 1000)))) {
+					fmt.Println(saleMoment, "\tPrice: ", e.Price())
+				}
+			}
 		}
 	}
 }
