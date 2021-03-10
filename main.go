@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/rrrkren/topshot-sales/topshot"
+	"github.com/fatih/color"
 
 	"github.com/onflow/flow-go-sdk/client"
 	"google.golang.org/grpc"
@@ -63,7 +64,20 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 				if(shouldPrintPlayer(e, saleMoment)){
 					//fmt.Println("be:", sellerEvent)
 					fmt.Println("\a")
-					fmt.Println(saleMoment, "\tPrice: ", e.Price())
+					//finalString := saleMoment.String()+"\tPrice: "+fmt.Sprintf("%.0f", e.Price())
+					c := color.New(color.FgWhite)
+					if (isMomentVeryRare(saleMoment)) {
+						c = c.Add(color.FgGreen) 
+						c = c.Add(color.BgWhite) 	
+					}
+					if (isMomentRare(saleMoment)) {
+						c = c.Add(color.FgGreen) 
+						c = c.Add(color.Bold) 	
+					}
+
+					c.Println(saleMoment, "\tPrice: ", e.Price())
+						//saleMoment.String()+"\tPrice: "+fmt.Sprintf("%.0f", e.Price()))
+					//fmt.Println(saleMoment, "\tPrice: ", e.Price())
 				}
 			}
 		}
@@ -96,4 +110,18 @@ func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bo
 	}
 	
 	return false;
+}
+
+func isMomentVeryRare(sale *topshot.SaleMoment) bool {
+	if (sale.NumMoments() <= 3000) {
+		return true;
+	}
+	return false;	
+}
+
+func isMomentRare(sale *topshot.SaleMoment) bool {
+	if (sale.NumMoments() <= 15000) {
+		return true;
+	}
+	return false;		
 }
