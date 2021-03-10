@@ -3,6 +3,7 @@ package topshot
 import (
 	"context"
 	"fmt"
+	"strconv"
 
 	"github.com/onflow/cadence"
 	"github.com/onflow/flow-go-sdk"
@@ -77,6 +78,14 @@ func (s SaleMoment) NumMoments() uint32 {
 	return uint32(s.Fields[7].(cadence.UInt32))
 }
 
+func (s SaleMoment) JerseyNumber() uint32 {
+	jersey, err := strconv.Atoi(s.Play()["JerseyNumber"])
+	if(err != nil){
+		fmt.Println(err)
+	}
+	return uint32(jersey)
+}
+
 func (s SaleMoment) Play() map[string]string {		
 	dict := s.Fields[2].(cadence.Dictionary)
 	res := map[string]string{}
@@ -93,6 +102,6 @@ func (s SaleMoment) SerialNumber() uint32 {
 func (s SaleMoment) String() string {
 	playData := s.Play()
 	//fmt.Println("\ns Moment:", s)
-	return fmt.Sprintf("%d %s\t playID: %d\t playerName: %s\t #%d/#%d    \t?serialNumber=%d",
-						s.SetID(), s.SetName(), s.PlayID(), playData["FullName"], s.SerialNumber(), s.NumMoments(), s.SerialNumber())
+	return fmt.Sprintf("%d %s\t playID: %d\t %s\t %d #%d/#%d    \t?serialNumber=%d",
+						s.SetID(), s.SetName(), s.PlayID(), playData["FullName"], s.JerseyNumber(), s.SerialNumber(), s.NumMoments(), s.SerialNumber())
 }

@@ -58,7 +58,7 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 			// loop through the Market.MomentListed/PriceChanged events in this blockEvent
 			// fmt.Println(sellerEvent.Value)
 			e := topshot.MomentListed(sellerEvent.Value)
-			if(e.Price() <= 170){
+			if(e.Price() <= 300){
 				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), e.Id())
 				handleErr(err)
 				if(shouldPrintPlayer(e, saleMoment)){
@@ -95,6 +95,10 @@ func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bo
 		return false;
 	}
 	
+	if(sale.SerialNumber() == sale.JerseyNumber()){
+		return true;	
+	}
+	
 	if(sale.SetID() != 26 && ( moment.Price() <= 70 || (sale.SetID() == 2 || sale.SetID() == 32 || sale.SetID() == 33 || sale.SetID() == 34) && moment.Price() <= 70)){
 		return true;	
 	}
@@ -123,7 +127,7 @@ func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bo
 }
 
 func isMomentVeryRare(sale *topshot.SaleMoment) bool {
-	if (sale.NumMoments() <= 3000) {
+	if (sale.NumMoments() <= 3000 || sale.SerialNumber() == sale.JerseyNumber() ) {
 		return true;
 	}
 	return false;	
