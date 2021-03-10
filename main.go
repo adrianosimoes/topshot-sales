@@ -72,7 +72,9 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 					}
 					if (isMomentRare(saleMoment)) {
 						c = c.Add(color.FgGreen) 
-						c = c.Add(color.Bold) 	
+					}
+					if (isMomentSerialLow(saleMoment)) {
+						c = c.Add(color.Bold) 		
 					}
 
 					c.Println(saleMoment, "\tPrice: ", e.Price())
@@ -132,4 +134,11 @@ func isMomentRare(sale *topshot.SaleMoment) bool {
 		return true;
 	}
 	return false;		
+}
+
+func isMomentSerialLow(sale *topshot.SaleMoment) bool {
+	if (sale.SerialNumber() <= 500) {
+		return true;
+	}
+	return false;
 }
