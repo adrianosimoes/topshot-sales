@@ -71,7 +71,7 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 }
 
 func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bool {
-	if(moment.Price() < 7){
+	if(moment.Price() < 6){
 		return true;
 	}
 	
@@ -80,6 +80,14 @@ func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bo
 	}
 	
 	if(sale.SetID() != 26 && ((sale.SetID() == 2 || sale.SetID() == 32 || sale.SetID() == 33 || sale.SetID() == 34) && moment.Price() <= 70)){
+		return true;	
+	}
+	
+	if(moment.Price() < 40 && sale.NumMoments() <= 11000){
+		return true;	
+	}
+	
+	if(moment.Price() < 10 && sale.NumMoments() <= 15000){
 		return true;	
 	}
 	
