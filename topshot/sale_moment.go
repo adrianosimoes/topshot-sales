@@ -21,6 +21,7 @@ func GetSaleMomentFromOwnerAtBlock(flowClient *client.Client, blockHeight uint64
           pub var setName: String
           pub var serialNumber: UInt32
           pub var price: UFix64
+		  pub var alldata: &TopShot.NFT
           init(moment: &TopShot.NFT, price: UFix64) {
             self.id = moment.id
             self.playId = moment.data.playID
@@ -29,13 +30,14 @@ func GetSaleMomentFromOwnerAtBlock(flowClient *client.Client, blockHeight uint64
             self.setName = TopShot.getSetName(setID: self.setId)!
             self.serialNumber = moment.data.serialNumber
             self.price = price
+			self.alldata = moment
           }
         }
 
 		pub fun main(owner:Address, momentID:UInt64): SaleMoment {
 			let acct = getAccount(owner)
             let collectionRef = acct.getCapability(/public/topshotSaleCollection)!.borrow<&{Market.SalePublic}>() ?? panic("Could not borrow capability from public collection")
-			return SaleMoment(moment: collectionRef.borrowMoment(id: momentID)!,price: collectionRef.getPrice(tokenID: momentID)!)
+			return SaleMoment(moment: collectionRef.borrowMoment(id: momentID)!, price: collectionRef.getPrice(tokenID: momentID)!)
 		}
 `
 	res, err := flowClient.ExecuteScriptAtBlockHeight(context.Background(), blockHeight, []byte(getSaleMomentScript), []cadence.Value{
@@ -45,7 +47,7 @@ func GetSaleMomentFromOwnerAtBlock(flowClient *client.Client, blockHeight uint64
 	if err != nil {
 		return nil, fmt.Errorf("error fetching sale moment from flow: %w", err)
 	}
-	
+	//fmt.Println("res:",res.(cadence.Struct))
 	saleMoment := SaleMoment(res.(cadence.Struct))
 	
 	return &saleMoment, nil
@@ -84,7 +86,7 @@ func (s SaleMoment) SerialNumber() uint32 {
 
 func (s SaleMoment) String() string {
 	playData := s.Play()
-	//fmt.Println(playData)
-	return fmt.Sprintf("setName: %s\t playID: %d\t playerName: %s\t #%d   \t?serialNumber=%d",
-						s.SetName(), s.PlayID(), playData["FullName"], s.SerialNumber(), s.SerialNumber())
+	//fmt.Println("\ns Moment:", s)
+	return fmt.Sprintf("%d %s\t playID: %d\t playerName: %s\t #%d    \t?serialNumber=%d",
+						s.SetID(), s.SetName(), s.PlayID(), playData["FullName"], s.SerialNumber(), s.SerialNumber())
 }

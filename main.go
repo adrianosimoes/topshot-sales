@@ -21,6 +21,11 @@ func main() {
 	handleErr(err)
 	err = flowClient.Ping(context.Background())
 	handleErr(err)
+	
+	// Run a bigger fetch block the first time, to check more blocks in the past:
+	latestBlock, err := flowClient.GetLatestBlock(context.Background(), false)
+	handleErr(err)
+	fetchBlocks(flowClient, int64(latestBlock.Height - 50), int64(latestBlock.Height), "A.c1e4f4f4c4257510.Market.MomentListed")
 
 	for {
 		// fetch latest block
@@ -49,15 +54,40 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 	for _, blockEvent := range blockEvents {
 		for _, sellerEvent := range blockEvent.Events {
 			// loop through the Market.MomentListed/PriceChanged events in this blockEvent
-			//fmt.Println(sellerEvent.Value)
+			// fmt.Println(sellerEvent.Value)
 			e := topshot.MomentListed(sellerEvent.Value)
-			if(e.Price() <= 40){
+			if(e.Price() <= 170){
 				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), e.Id())
 				handleErr(err)
-				if(e.Price()< 8 || (saleMoment != nil && (saleMoment.SetID() != 26 || saleMoment.SerialNumber() <= 500 || (e.Price() < 25 && saleMoment.SerialNumber() <= 1000)))) {
+				if(shouldPrintPlayer(e, saleMoment)){
+					//fmt.Println("be:", sellerEvent)
 					fmt.Println(saleMoment, "\tPrice: ", e.Price())
 				}
 			}
 		}
 	}
+}
+
+func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bool {
+	if(moment.Price() < 7){
+		return true;
+	}
+	
+	if(sale == nil) {
+		return false;
+	}
+	
+	if(sale.SetID() != 26 && ((sale.SetID() == 2 || sale.SetID() == 32 || sale.SetID() == 33 || sale.SetID() == 34) && moment.Price() <= 70)){
+		return true;	
+	}
+	
+	if(moment.Price() < 35 && sale.SerialNumber() <= 500){
+		return true;	
+	}
+	
+	if(moment.Price() < 20 && sale.SerialNumber() <= 1000){
+		return true;
+	}
+	
+	return false;
 }
