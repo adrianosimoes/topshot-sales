@@ -21,6 +21,7 @@ func GetSaleMomentFromOwnerAtBlock(flowClient *client.Client, blockHeight uint64
           pub var setName: String
           pub var serialNumber: UInt32
           pub var price: UFix64
+          pub var numMoments: UInt32
 		  pub var alldata: &TopShot.NFT
           init(moment: &TopShot.NFT, price: UFix64) {
             self.id = moment.id
@@ -30,6 +31,7 @@ func GetSaleMomentFromOwnerAtBlock(flowClient *client.Client, blockHeight uint64
             self.setName = TopShot.getSetName(setID: self.setId)!
             self.serialNumber = moment.data.serialNumber
             self.price = price
+            self.numMoments = TopShot.getNumMomentsInEdition(setID: self.setId, playID:self.playId)!
 			self.alldata = moment
           }
         }
@@ -71,7 +73,11 @@ func (s SaleMoment) SetID() uint32 {
 	return uint32(s.Fields[3].(cadence.UInt32))
 }
 
-func (s SaleMoment) Play() map[string]string {
+func (s SaleMoment) NumMoments() uint32 {
+	return uint32(s.Fields[7].(cadence.UInt32))
+}
+
+func (s SaleMoment) Play() map[string]string {		
 	dict := s.Fields[2].(cadence.Dictionary)
 	res := map[string]string{}
 	for _, kv := range dict.Pairs {
@@ -87,6 +93,6 @@ func (s SaleMoment) SerialNumber() uint32 {
 func (s SaleMoment) String() string {
 	playData := s.Play()
 	//fmt.Println("\ns Moment:", s)
-	return fmt.Sprintf("%d %s\t playID: %d\t playerName: %s\t #%d    \t?serialNumber=%d",
-						s.SetID(), s.SetName(), s.PlayID(), playData["FullName"], s.SerialNumber(), s.SerialNumber())
+	return fmt.Sprintf("%d %s\t playID: %d\t playerName: %s\t #%d/#%d    \t?serialNumber=%d",
+						s.SetID(), s.SetName(), s.PlayID(), playData["FullName"], s.SerialNumber(), s.NumMoments(), s.SerialNumber())
 }
