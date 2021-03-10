@@ -33,7 +33,7 @@ func main() {
 		handleErr(err)
 		//fmt.Println("current height: ", latestBlock.Height)
 
-		blockSize := 15
+		blockSize := 10
 		for i := 0; i < blockSize; i+=blockSize {
 			//fmt.Println("current block: ", int64(latestBlock.Height) - int64(i))
 			fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentListed")
@@ -83,7 +83,11 @@ func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bo
 		return true;	
 	}
 	
-	if(moment.Price() < 35 && sale.SerialNumber() <= 500){
+	if(moment.Price() < 40 && sale.SerialNumber() <= 200){
+		return true;	
+	}
+	
+	if(moment.Price() < 25 && sale.SerialNumber() <= 500){
 		return true;	
 	}
 	
