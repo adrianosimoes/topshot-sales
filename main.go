@@ -39,6 +39,7 @@ func main() {
 			fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentListed")
 			//fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentPriceChanged")
 		}
+		fmt.Print(".")
 	}
 }
 
@@ -61,6 +62,7 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 				handleErr(err)
 				if(shouldPrintPlayer(e, saleMoment)){
 					//fmt.Println("be:", sellerEvent)
+					fmt.Println("\a")
 					fmt.Println(saleMoment, "\tPrice: ", e.Price())
 				}
 			}
