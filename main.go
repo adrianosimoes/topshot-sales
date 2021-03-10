@@ -93,7 +93,7 @@ func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bo
 		return false;
 	}
 	
-	if(sale.SetID() != 26 && ((sale.SetID() == 2 || sale.SetID() == 32 || sale.SetID() == 33 || sale.SetID() == 34) && moment.Price() <= 70)){
+	if(sale.SetID() != 26 && ( moment.Price() <= 70 || (sale.SetID() == 2 || sale.SetID() == 32 || sale.SetID() == 33 || sale.SetID() == 34) && moment.Price() <= 70)){
 		return true;	
 	}
 	
