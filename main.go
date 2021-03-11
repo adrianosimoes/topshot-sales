@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+	"os/exec"
 	"context"
 	"fmt"
 	"github.com/rrrkren/topshot-sales/topshot"
@@ -28,6 +30,9 @@ func main() {
 	handleErr(err)
 	fetchBlocks(flowClient, int64(latestBlock.Height - 50), int64(latestBlock.Height), "A.c1e4f4f4c4257510.Market.MomentListed")
 
+	// blocks :=fetchFilteredBlocks(flowClient, int64(latestBlock.Height - 50), int64(latestBlock.Height), "A.c1e4f4f4c4257510.Market.MomentListed")
+	// dumpMoments(blocks)
+
 	for {
 		// fetch latest block
 		latestBlock, err := flowClient.GetLatestBlock(context.Background(), false)
@@ -37,8 +42,12 @@ func main() {
 		blockSize := 10
 		for i := 0; i < blockSize; i+=blockSize {
 			//fmt.Println("current block: ", int64(latestBlock.Height) - int64(i))
+			
 			fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentListed")
 			//fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentPriceChanged")
+
+			//blocks = fetchFilteredBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentListed")
+			//dumpMoments(blocks)
 		}
 		fmt.Print(".")
 	}
@@ -64,7 +73,7 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 				if(shouldPrintPlayer(e, saleMoment)){
 					//fmt.Println("be:", sellerEvent)
 					fmt.Println("\a")
-					//finalString := saleMoment.String()+"\tPrice: "+fmt.Sprintf("%.0f", e.Price())
+
 					c := color.New(color.FgWhite)
 					if (isMomentVeryRare(saleMoment)) {
 						c = c.Add(color.FgGreen) 
@@ -78,8 +87,6 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 					}
 
 					c.Println(saleMoment, "\tPrice: ", e.Price())
-						//saleMoment.String()+"\tPrice: "+fmt.Sprintf("%.0f", e.Price()))
-					//fmt.Println(saleMoment, "\tPrice: ", e.Price())
 				}
 			}
 		}
@@ -145,4 +152,62 @@ func isMomentSerialLow(sale *topshot.SaleMoment) bool {
 		return true;
 	}
 	return false;
+}
+
+func fetchFilteredBlocks(flowClient *client.Client, startBlock int64, endBlock int64, typeStr string) []*topshot.SaleMoment {
+	// fetch block events of topshot Market.MomentListed/PriceChanged events for the past 1000 blocks
+	blockEvents, err := flowClient.GetEventsForHeightRange(context.Background(), client.EventRangeQuery{
+		Type:        typeStr,
+		StartHeight: uint64(startBlock),
+		EndHeight:   uint64(endBlock),
+	})
+	handleErr(err)
+
+	filteredMoments := make([]*topshot.SaleMoment,0)
+
+	for _, blockEvent := range blockEvents {
+		for _, sellerEvent := range blockEvent.Events {
+			// loop through the Market.MomentListed/PriceChanged events in this blockEvent
+			// fmt.Println(sellerEvent.Value)
+			e := topshot.MomentListed(sellerEvent.Value)
+			if(e.Price() <= 300){
+				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), e.Id())
+				handleErr(err)
+				if(shouldPrintPlayer(e, saleMoment)){
+					filteredMoments = append(filteredMoments, saleMoment)
+				}
+			}
+		}
+	}
+
+	return filteredMoments
+}
+
+func clearScreen() {
+	c := exec.Command("clear")
+	c.Stdout = os.Stdout
+	c.Run()
+}
+
+func dumpMoments(moments []*topshot.SaleMoment) {
+	//first clear
+	//clearScreen()
+
+	for _, saleMoment := range moments {
+		
+		c := color.New(color.FgWhite)
+		if (isMomentVeryRare(saleMoment)) {
+			c = c.Add(color.FgGreen) 
+			c = c.Add(color.BgWhite) 	
+		}
+		if (isMomentRare(saleMoment)) {
+			c = c.Add(color.FgGreen) 
+		}
+		if (isMomentSerialLow(saleMoment)) {
+			c = c.Add(color.Bold) 		
+		}
+
+		c.Println(saleMoment, "\tPrice: ", fmt.Sprintf("%.0f", saleMoment.Price()))	
+		fmt.Println("")
+	}
 }

@@ -86,6 +86,10 @@ func (s SaleMoment) JerseyNumber() uint32 {
 	return uint32(jersey)
 }
 
+func (s SaleMoment) Price() float64 {
+	return float64(s.Fields[6].(cadence.UFix64) / 100000000)
+}
+
 func (s SaleMoment) Play() map[string]string {		
 	dict := s.Fields[2].(cadence.Dictionary)
 	res := map[string]string{}
