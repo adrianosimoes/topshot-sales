@@ -106,6 +106,6 @@ func (s SaleMoment) SerialNumber() uint32 {
 func (s SaleMoment) String() string {
 	playData := s.Play()
 	//fmt.Println("\ns Moment:", s)
-	return fmt.Sprintf("%d %s\t playID: %d\t %s\t %d #%d/#%d    \t?serialNumber=%d",
-						s.SetID(), s.SetName(), s.PlayID(), playData["FullName"], s.JerseyNumber(), s.SerialNumber(), s.NumMoments(), s.SerialNumber())
+	return fmt.Sprintf("%s\t %s\t %d #%d / #%d",
+						s.SetName(), playData["FullName"], s.JerseyNumber(), s.SerialNumber(), s.NumMoments())
 }
