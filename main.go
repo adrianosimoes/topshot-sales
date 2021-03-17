@@ -3,6 +3,7 @@ package main
 import (
 	//"time"
 	"encoding/json"
+	"runtime"
 	"strings"
 	"strconv"
 	"flag"
@@ -433,13 +434,26 @@ func getPlayerURL(saleMoment *topshot.SaleMoment) string {
 }
 
 func openURLOnChrome(url string) {
-	args := []string{"--new", "-a", "Google Chrome", "--args",url}
-	c := exec.Command("open",args...)
-	c.Stdout = os.Stdout
-	c.Run()	
+	if runtime.GOOS == "windows" {
+		args := []string{url}
+		c := exec.Command("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",args...)
+		c.Stdout = os.Stdout
+		c.Stderr = os.Stdout
+		c.Run()	
+		
+	} else {
+		args := []string{"--new", "-a", "Google Chrome", "--args",url}
+		c := exec.Command("open",args...)
+		c.Stdout = os.Stdout
+		c.Run()	
+	}
 }
 
 func shoutSale(saleMoment *topshot.SaleMoment) {
+	if runtime.GOOS == "windows" {
+		return;
+	}
+
 	serialStr := strconv.FormatUint(uint64(saleMoment.SerialNumber()), 10)
 	totalStr := strconv.FormatUint(uint64(saleMoment.NumMoments()), 10)
 	priceStr := fmt.Sprintf("%.0f", saleMoment.Price()) + "$"
