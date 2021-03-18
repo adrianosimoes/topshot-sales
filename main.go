@@ -2,6 +2,7 @@ package main
 
 import (
 	//"time"
+	"github.com/onflow/flow-go-sdk"
 	"encoding/json"
 	"runtime"
 	"strings"
@@ -90,12 +91,21 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 	})
 	handleErr(err)
 
+
 	for _, blockEvent := range blockEvents {
+		var  previousAddress *flow.Address
+		var previousId uint64
+
 		for _, sellerEvent := range blockEvent.Events {
 			// loop through the Market.MomentListed/PriceChanged events in this blockEvent
 			// fmt.Println(sellerEvent.Value)
 			e := topshot.MomentListed(sellerEvent.Value)
-			
+
+			if (previousAddress == e.Seller() && previousId == e.Id()) {
+				fmt.Println("skipping same event")
+				continue
+			}
+
 			if(e.Price() <= 60){
 				// start := time.Now()
 
@@ -113,6 +123,9 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
     	// 			fmt.Println("Print player took %s", elapsed)
 				}
 			}
+
+			previousAddress = e.Seller()
+			previousId = e.Id()
 		}
 	}
 }
