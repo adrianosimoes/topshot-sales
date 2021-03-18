@@ -54,14 +54,14 @@ func nonUniqueModeLogic() {
 	handleErr(err)
 	
 	// Run a bigger fetch block the first time, to check more blocks in the past:
-	// latestBlock, err := flowClient.GetLatestBlock(context.Background(), false)
+	// latestBlock, err := flowClient.GetLatestBlock(context.Background(), true)
 	// handleErr(err)
 
 	//fetchBlocks(flowClient, int64(latestBlock.Height - 50), int64(latestBlock.Height), "A.c1e4f4f4c4257510.Market.MomentListed")
 
 	for {
 		// fetch latest block
-		latestBlock, err := flowClient.GetLatestBlock(context.Background(), false)
+		latestBlock, err := flowClient.GetLatestBlock(context.Background(), true)
 		handleErr(err)
 		//fmt.Println("current height: ", latestBlock.Height)
 
@@ -125,7 +125,7 @@ func uniqueModeLogic() {
 	handleErr(err)
 	
 	// Run a bigger fetch block the first time, to check more blocks in the past:
-	latestBlock, err := flowClient.GetLatestBlock(context.Background(), false)
+	latestBlock, err := flowClient.GetLatestBlock(context.Background(), true)
 	handleErr(err)
 	
 	filteredMoments := make([]*topshot.SaleMoment,0)
@@ -141,11 +141,11 @@ func uniqueModeLogic() {
 
 	for {
 		// fetch latest block
-		latestBlock, err := flowClient.GetLatestBlock(context.Background(), false)
+		latestBlock, err := flowClient.GetLatestBlock(context.Background(), true)
 		handleErr(err)
 		//fmt.Println("current height: ", latestBlock.Height)
 
-		blockSize := 10
+		blockSize := 4
 		
 		for i := 0; i < blockSize; i+=blockSize {
 			//fmt.Println("current block: ", int64(latestBlock.Height) - int64(i))
@@ -422,18 +422,23 @@ func getPlayerURL(saleMoment *topshot.SaleMoment) string {
 				return "https://www.nbatopshot.com/listings/p2p/"+moment.GetURLHash()+"?serialNumber="+strconv.FormatUint(uint64(saleMoment.SerialNumber()), 10)
 			  }
 			}
-
-			return "no url found :("
+			
+			fmt.Println("too many moments, no url found.")
+			return ""
 
 		} else if (momentCount == 1) {
 			moment := momentListings[0]
 			return "https://www.nbatopshot.com/listings/p2p/"+moment.GetURLHash()+"?serialNumber="+strconv.FormatUint(uint64(saleMoment.SerialNumber()), 10)
 		}
 
-		return "no url found :("
+		fmt.Println("no moments found:", momentCount)
+		return ""
 }
 
 func openURLOnChrome(url string) {
+	if(url == ""){
+		return;
+	}
 	if runtime.GOOS == "windows" {
 		args := []string{url}
 		c := exec.Command("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",args...)
