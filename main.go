@@ -2,12 +2,10 @@ package main
 
 import (
 	//"time"
-	"github.com/onflow/flow-go-sdk"
 	"encoding/json"
 	"runtime"
 	"strings"
 	"strconv"
-	"flag"
 	"os"
 	"os/exec"
 	"context"
@@ -20,6 +18,7 @@ import (
 )
 
 var gameData topshot.Data
+var previousId uint64
 
 func handleErr(err error) {
 	if err != nil {
@@ -29,25 +28,7 @@ func handleErr(err error) {
 
 func main() {
 
-	boolPtr := flag.Bool("unique",false,"whether entries are merged till they're unique or not")
-	flag.Parse()
-
-	if (*boolPtr) {
-		fmt.Println("using unique mode!")
-	} else {
-		fmt.Println("NOT using unique mode!")
-	}
-
 	gameData = topshot.LoadGameData()	
-
-	if (*boolPtr) {
-		uniqueModeLogic()
-	} else {
-		nonUniqueModeLogic()
-	}
-}
-
-func nonUniqueModeLogic() {
 	// connect to flow
 	flowClient, err := client.New("access.mainnet.nodes.onflow.org:9000", grpc.WithInsecure())
 	handleErr(err)
@@ -62,11 +43,11 @@ func nonUniqueModeLogic() {
 
 	for {
 		// fetch latest block
-		latestBlock, err := flowClient.GetLatestBlock(context.Background(), true)
+		latestBlock, err := flowClient.GetLatestBlock(context.Background(), false)
 		handleErr(err)
 		//fmt.Println("current height: ", latestBlock.Height)
 
-		blockSize := 5
+		blockSize := 10
 		
 		//start := time.Now()
 		for i := 0; i < blockSize; i+=blockSize {
@@ -80,6 +61,7 @@ func nonUniqueModeLogic() {
 		// fmt.Println("Fetch block took %s", elapsed)
 		fmt.Print(".")
 	}
+
 }
 
 func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, typeStr string) {
@@ -91,25 +73,23 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 	})
 	handleErr(err)
 
-
 	for _, blockEvent := range blockEvents {
-		var  previousAddress *flow.Address
-		var previousId uint64
 
 		for _, sellerEvent := range blockEvent.Events {
 			// loop through the Market.MomentListed/PriceChanged events in this blockEvent
 			// fmt.Println(sellerEvent.Value)
 			e := topshot.MomentListed(sellerEvent.Value)
 
-			if (previousAddress == e.Seller() && previousId == e.Id()) {
-				fmt.Println("skipping same event")
+			eventId := e.Id()
+
+			if (previousId == eventId) {
 				continue
 			}
 
 			if(e.Price() <= 60){
 				// start := time.Now()
 
-				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), e.Id())
+				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), eventId)
 				handleErr(err)
 				// elapsed := time.Since(start)
     // 			fmt.Println("Getting sale moment took %s", elapsed)
@@ -117,68 +97,17 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 				if(shouldPrintPlayer(e, saleMoment)){
 					//start := time.Now()
 
+					fmt.Println("event id",eventId,"previousId",previousId)
 					printPlayer(saleMoment, true)
 
 					// elapsed := time.Since(start)
     	// 			fmt.Println("Print player took %s", elapsed)
+
+    				previousId = eventId
 				}
 			}
 
-			previousAddress = e.Seller()
-			previousId = e.Id()
 		}
-	}
-}
-
-func uniqueModeLogic() {
-	// connect to flow
-	flowClient, err := client.New("access.mainnet.nodes.onflow.org:9000", grpc.WithInsecure())
-	handleErr(err)
-	err = flowClient.Ping(context.Background())
-	handleErr(err)
-	
-	// Run a bigger fetch block the first time, to check more blocks in the past:
-	latestBlock, err := flowClient.GetLatestBlock(context.Background(), true)
-	handleErr(err)
-	
-	filteredMoments := make([]*topshot.SaleMoment,0)
-	momentCount := 0
-
-	blocks :=fetchFilteredBlocks(flowClient, int64(latestBlock.Height - 50), int64(latestBlock.Height), "A.c1e4f4f4c4257510.Market.MomentListed")
-	filteredMoments = mergeUniqueBlocks(blocks, filteredMoments)
-
-	if (len(filteredMoments) > momentCount) {
-		dumpMoments(filteredMoments)	
-		momentCount = len(filteredMoments)
-	}
-
-	for {
-		// fetch latest block
-		latestBlock, err := flowClient.GetLatestBlock(context.Background(), true)
-		handleErr(err)
-		//fmt.Println("current height: ", latestBlock.Height)
-
-		blockSize := 4
-		
-		for i := 0; i < blockSize; i+=blockSize {
-			//fmt.Println("current block: ", int64(latestBlock.Height) - int64(i))
-			
-			//fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentListed")
-			//fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentPriceChanged")
-
-			blocks = fetchFilteredBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentListed")
-
-			filteredMoments = mergeUniqueBlocks(blocks, filteredMoments)
-
-			// blocks = fetchFilteredBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentPurchased")
-			// filteredMoments = removePurchasedBlocks(blocks, filteredMoments)	
-
-			if (len(filteredMoments) > momentCount) {
-				dumpMoments(filteredMoments)	
-				momentCount = len(filteredMoments)
-			}
-		}
-		fmt.Print(".")
 	}
 }
 
@@ -247,103 +176,6 @@ func isMomentSerialLow(sale *topshot.SaleMoment) bool {
 	return false;
 }
 
-func fetchFilteredBlocks(flowClient *client.Client, startBlock int64, endBlock int64, typeStr string) []*topshot.SaleMoment {
-	// fetch block events of topshot Market.MomentListed/PriceChanged events for the past 1000 blocks
-	blockEvents, err := flowClient.GetEventsForHeightRange(context.Background(), client.EventRangeQuery{
-		Type:        typeStr,
-		StartHeight: uint64(startBlock),
-		EndHeight:   uint64(endBlock),
-	})
-	handleErr(err)
-
-	filteredMoments := make([]*topshot.SaleMoment,0)
-
-	for _, blockEvent := range blockEvents {
-		for _, sellerEvent := range blockEvent.Events {
-			// loop through the Market.MomentListed/PriceChanged events in this blockEvent
-			// fmt.Println(sellerEvent.Value)
-			e := topshot.MomentListed(sellerEvent.Value)
-			if(e.Price() <= 300){
-				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), e.Id())
-				handleErr(err)
-				if(shouldPrintPlayer(e, saleMoment)){
-					filteredMoments = append(filteredMoments, saleMoment)
-				}
-			}
-		}
-	}
-
-	return filteredMoments
-}
-
-func clearScreen() {
-	c := exec.Command("clear")
-	c.Stdout = os.Stdout
-	c.Run()
-}
-
-func dumpMoments(moments []*topshot.SaleMoment) {
-	//first clear
-	clearScreen()
-
-	//new list needs to warn
-	fmt.Println("\a")
-	fmt.Println("---------------------------------------------")
-	for _, saleMoment := range moments {
-		printPlayer(saleMoment, true)
-	}
-	fmt.Println("++++++++++++++++++++++++++++++++++++++++++++++")
-}
-
-func mergeUniqueBlocks(blocks []*topshot.SaleMoment, filteredMoments []*topshot.SaleMoment) []*topshot.SaleMoment {
-	mergedMoments := make([]*topshot.SaleMoment, 0)
-	mergedMoments = append(mergedMoments,filteredMoments...)
-
-	for _, newMoment := range blocks {
-		found := false
-		for _, existingMoment := range filteredMoments {
-			if (existingMoment.SetID() == newMoment.SetID() &&
-				existingMoment.PlayID() == newMoment.PlayID() &&
-				existingMoment.Price() == newMoment.Price() &&
-				existingMoment.SerialNumber() == newMoment.SerialNumber()) {
-					found = true
-					break
-				} 
-		}
-
-		if (found == false) {
-			mergedMoments = append(mergedMoments, newMoment)
-		}
-	}
-
-	return mergedMoments
-}
-
-func removePurchasedBlocks(blocks []*topshot.SaleMoment, filteredMoments []*topshot.SaleMoment) []*topshot.SaleMoment {
-	mergedMoments := make([]*topshot.SaleMoment, 0)
-
-	for _, existingMoment := range filteredMoments {
-		found := false
-
-		for _, goneMoment := range blocks {
-			
-		
-			if (existingMoment.SetID() == goneMoment.SetID() &&
-				existingMoment.PlayID() == goneMoment.PlayID() &&
-				existingMoment.Price() == goneMoment.Price()) {
-					found = true
-					break
-			} 
-		}
-
-		if (found == false) {
-			mergedMoments = append(mergedMoments, existingMoment)
-		}
-	}
-
-	return mergedMoments
-}
-
 func printPlayer(saleMoment *topshot.SaleMoment, printURL bool) {
 	c := color.New(color.FgWhite)
 	if (isMomentVeryRare(saleMoment)) {
@@ -368,6 +200,12 @@ func printPlayer(saleMoment *topshot.SaleMoment, printURL bool) {
 
 		c.Println(url)
 		
+		// start = time.Now()
+
+		openURLOnChrome(url)
+
+		// elapsed = time.Since(start)
+		// fmt.Println("Opening on chrome took %s", elapsed)		
 
 		// start = time.Now()
 		
@@ -375,14 +213,6 @@ func printPlayer(saleMoment *topshot.SaleMoment, printURL bool) {
 		
 		// elapsed = time.Since(start)
 		// fmt.Println("Shouting took %s", elapsed)
-
-
-		// start = time.Now()
-
-		openURLOnChrome(url)
-
-		// elapsed = time.Since(start)
-		// fmt.Println("Opening on chrome took %s", elapsed)		
 	}
 
 	fmt.Println("")
@@ -424,8 +254,8 @@ func getPlayerURL(saleMoment *topshot.SaleMoment) string {
 		momentCount := len(momentListings)
 
 		if(momentCount > 1) {
-			args := []string{"Warning!","Found", "moment", "with", "more", "than", "1", "listing"}
-			shoutStrings(args)
+			//args := []string{"Warning!","Found", "moment", "with", "more", "than", "1", "listing"}
+			//shoutStrings(args)
 
 			for i := 0; i < momentCount; i+=1 {
 			  // Each value is an interface{} type, that is type asserted as a string
