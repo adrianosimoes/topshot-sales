@@ -97,7 +97,7 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 				if(shouldPrintPlayer(e, saleMoment)){
 					//start := time.Now()
 
-					fmt.Println("event id",eventId,"previousId",previousId)
+					//fmt.Println("event id",eventId,"previousId",previousId)
 					printPlayer(saleMoment, true)
 
 					// elapsed := time.Since(start)
