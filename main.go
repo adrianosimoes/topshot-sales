@@ -112,13 +112,26 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 }
 
 func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bool {
-	// if(moment.Price() < 11){
-	// 	return true;
-	// }
+	if(moment.Price() < 4){
+		return true;
+	}
 
 	if(sale == nil) {
 		return false;
 	}
+
+	//document.querySelector('[data-testid="selectMoment"]').click()
+
+	// if ((strings.Contains(sale.Play()["FullName"],"Serge Ibaka") && (sale.NumMoments() <= 15000 && moment.Price() < 52)) ||
+	// 	(strings.Contains(sale.Play()["FullName"],"Dwight Howard") && (sale.NumMoments() <= 15000 && moment.Price() < 58)) ||
+	// 	(strings.Contains(sale.Play()["FullName"],"Montrezl Harrell") && (sale.NumMoments() <= 35000 && moment.Price() < 24)) ||
+	// 	(strings.Contains(sale.Play()["FullName"],"Steven Adams") && (sale.NumMoments() <= 35000 && moment.Price() < 21)) ||
+	// 	(strings.Contains(sale.Play()["FullName"],"Bogdan") && (sale.NumMoments() <= 20000 && moment.Price() < 35)) ||
+	// 	(strings.Contains(sale.Play()["FullName"],"Gordon Hayward") && (sale.NumMoments() <= 20000 && moment.Price() < 39)) ||
+	// 	(strings.Contains(sale.Play()["FullName"],"Christian Wood") && (sale.NumMoments() <= 20000 && moment.Price() < 36))||
+	// 	(strings.Contains(sale.Play()["FullName"],"Chris Paul") && (sale.NumMoments() <= 20000 && moment.Price() < 48))) {
+	// 	return true;	
+	// }
 	
 	if(sale.SerialNumber() == sale.JerseyNumber()){
 		return true;	
@@ -148,7 +161,7 @@ func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bo
 		return true;	
 	}
 	
-	if(moment.Price() <= 10 && sale.SerialNumber() <= 1000){
+	if(moment.Price() <= 10 && sale.SerialNumber() <= 200){
 		return true;
 	}
 
@@ -223,7 +236,7 @@ func getMomentInfoFromPlayerID(playerId int, momentsCount uint32, price float64)
 	momentsCountStr := strconv.Itoa(int(momentsCount))
 	//priceStr := fmt.Sprintf("%.0f", price)
 
-	queryData := "{\"operationName\":\"SearchMomentListingsDefault\",\"variables\":{\"byPrice\":{\"min\":null,\"max\":\"1000" + "\"},\"byPower\":{\"min\":null,\"max\":null},\"bySerialNumber\":{\"min\":null,\"max\":\"" + momentsCountStr + "\"},\"byGameDate\":{\"start\":null,\"end\":null},\"byCreatedAt\":{\"start\":null,\"end\":null},\"byPrimaryPlayerPosition\":[],\"bySets\":[],\"bySeries\":[],\"bySetVisuals\":[],\"byPlayStyle\":[],\"bySkill\":[],\"byPlayers\":[\"" + playerIdStr + "\"],\"byTagNames\":[],\"byTeams\":[],\"byListingType\":[\"BY_USERS\"],\"searchInput\":{\"pagination\":{\"cursor\":\"\",\"direction\":\"RIGHT\",\"limit\":12}},\"orderBy\":\"UPDATED_AT_DESC\"},\"query\":\"query SearchMomentListingsDefault($byPlayers: [ID], $byTagNames: [String!], $byTeams: [ID], $byPrice: PriceRangeFilterInput, $orderBy: MomentListingSortType, $byGameDate: DateRangeFilterInput, $byCreatedAt: DateRangeFilterInput, $byListingType: [MomentListingType], $bySets: [ID], $bySeries: [ID], $bySetVisuals: [VisualIdType], $byPrimaryPlayerPosition: [PlayerPosition], $bySerialNumber: IntegerRangeFilterInput, $searchInput: BaseSearchInput!, $userDapperID: ID) {\n  searchMomentListings(input: {filters: {byPlayers: $byPlayers, byTagNames: $byTagNames, byGameDate: $byGameDate, byCreatedAt: $byCreatedAt, byTeams: $byTeams, byPrice: $byPrice, byListingType: $byListingType, byPrimaryPlayerPosition: $byPrimaryPlayerPosition, bySets: $bySets, bySeries: $bySeries, bySetVisuals: $bySetVisuals, bySerialNumber: $bySerialNumber}, sortBy: $orderBy, searchInput: $searchInput, userDapperID: $userDapperID}) {\n    data {\n      filters {\n        byPlayers\n        byTagNames\n        byTeams\n        byPrimaryPlayerPosition\n        byGameDate {\n          start\n          end\n          __typename\n        }\n        byCreatedAt {\n          start\n          end\n          __typename\n        }\n        byPrice {\n          min\n          max\n          __typename\n        }\n        bySerialNumber {\n          min\n          max\n          __typename\n        }\n        bySets\n        bySeries\n        bySetVisuals\n        __typename\n      }\n      searchSummary {\n        count {\n          count\n          __typename\n        }\n        pagination {\n          leftCursor\n          rightCursor\n          __typename\n        }\n        data {\n          ... on MomentListings {\n            size\n            data {\n              ... on MomentListing {\n                id\n                version\n                circulationCount\n                flowRetired\n                set {\n                  id\n                  flowName\n                  setVisualId\n                  flowSeriesNumber\n                  __typename\n                }\n                play {\n                  description\n                  id\n                  stats {\n                    playerName\n                    dateOfMoment\n                    playCategory\n                    teamAtMomentNbaId\n                    teamAtMoment\n                    __typename\n                  }\n                  __typename\n                }\n                assetPathPrefix\n                priceRange {\n                  min\n                  max\n                  __typename\n                }\n                momentListingCount\n                listingType\n                userOwnedSetPlayCount\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\"}"
+	queryData := "{\"operationName\":\"SearchMomentListingsDefault\",\"variables\":{\"byPrice\":{\"min\":null,\"max\":\"1000" + "\"},\"byPower\":{\"min\":null,\"max\":null},\"bySerialNumber\":{\"min\":null,\"max\":\"" + momentsCountStr + "\"},\"byGameDate\":{\"start\":null,\"end\":null},\"byCreatedAt\":{\"start\":null,\"end\":null},\"byPrimaryPlayerPosition\":[],\"bySets\":[],\"bySeries\":[],\"bySetVisuals\":[],\"byPlayStyle\":[],\"bySkill\":[],\"byPlayers\":[\"" + playerIdStr + "\"],\"byTagNames\":[],\"byTeams\":[],\"byListingType\":[\"BY_USERS\"],\"searchInput\":{\"pagination\":{\"cursor\":\"\",\"direction\":\"RIGHT\",\"limit\":12}},\"orderBy\":\"UPDATED_AT_DESC\"},\"query\":\"query SearchMomentListingsDefault($byPlayers: [ID], $byTagNames: [String!], $byTeams: [ID], $byPrice: PriceRangeFilterInput, $orderBy: MomentListingSortType, $byGameDate: DateRangeFilterInput, $byCreatedAt: DateRangeFilterInput, $byListingType: [MomentListingType], $bySets: [ID], $bySeries: [ID], $bySetVisuals: [VisualIdType], $byPrimaryPlayerPosition: [PlayerPosition], $bySerialNumber: IntegerRangeFilterInput, $searchInput: BaseSearchInput!) {\n  searchMomentListings(input: {filters: {byPlayers: $byPlayers, byTagNames: $byTagNames, byGameDate: $byGameDate, byCreatedAt: $byCreatedAt, byTeams: $byTeams, byPrice: $byPrice, byListingType: $byListingType, byPrimaryPlayerPosition: $byPrimaryPlayerPosition, bySets: $bySets, bySeries: $bySeries, bySetVisuals: $bySetVisuals, bySerialNumber: $bySerialNumber}, sortBy: $orderBy, searchInput: $searchInput}) {\n    data {\n      filters {\n        byPlayers\n        byTagNames\n        byTeams\n        byPrimaryPlayerPosition\n        byGameDate {\n          start\n          end\n          __typename\n        }\n        byCreatedAt {\n          start\n          end\n          __typename\n        }\n        byPrice {\n          min\n          max\n          __typename\n        }\n        bySerialNumber {\n          min\n          max\n          __typename\n        }\n        bySets\n        bySeries\n        bySetVisuals\n        __typename\n      }\n      searchSummary {\n        count {\n          count\n          __typename\n        }\n        pagination {\n          leftCursor\n          rightCursor\n          __typename\n        }\n        data {\n          ... on MomentListings {\n            size\n            data {\n              ... on MomentListing {\n                id\n                version\n                circulationCount\n                flowRetired\n                set {\n                  id\n                  flowName\n                  setVisualId\n                  flowSeriesNumber\n                  __typename\n                }\n                play {\n                  description\n                  id\n                  stats {\n                    playerName\n                    dateOfMoment\n                    playCategory\n                    teamAtMomentNbaId\n                    teamAtMoment\n                    __typename\n                  }\n                  __typename\n                }\n                assetPathPrefix\n                priceRange {\n                  min\n                  max\n                  __typename\n                }\n                momentListingCount\n                listingType\n                userOwnedSetPlayCount\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\"}"
 	//queryData = strings.ReplaceAll(queryData, "\\n", "\n")
 	queryData = strings.Replace(queryData, "\n",`\n`, -1)
 
