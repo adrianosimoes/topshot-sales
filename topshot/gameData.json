@@ -3202,7 +3202,8 @@
      "__typename":"Teams"
   },
   "allSets":{
-       "data":[
+  "size":56,
+   "data":[
           {
 				"id": "708a6f60-5c93-406e-854f-50dd6734c0dd",
 				"flowName": "Holo Icon",
@@ -3356,6 +3357,7 @@
 			  {
 				"id": "08f6dd13-c2d9-4a74-85c9-3667e37a5749",
 				"flowName": "Rising Stars",
+				"simpleId": "60",
 				"setVisualId": "SET_VISUAL_COMMON",
 				"flowSeriesNumber": 4,
 				"leagues": [
@@ -3366,6 +3368,7 @@
 			  {
 				"id": "f493db4a-a775-4d6e-be8a-56fae509a92d",
 				"flowName": "Rising Stars",
+				"simpleId": "35",
 				"setVisualId": "SET_VISUAL_RARE",
 				"flowSeriesNumber": 2,
 				"leagues": [
@@ -3436,6 +3439,7 @@
 			  {
 				"id": "7b797690-5b53-45a7-b972-bd2d5152654a",
 				"flowName": "Base Set",
+				"simpleId": "2",
 				"setVisualId": "SET_VISUAL_COMMON",
 				"flowSeriesNumber": 1,
 				"leagues": [
@@ -3647,6 +3651,7 @@
 				"id": "208ae30a-a4fe-42d4-9e51-e6fd1ad2a7a9",
 				"flowName": "Base Set",
 				"setVisualId": "SET_VISUAL_COMMON",
+				"simpleId": "26",
 				"flowSeriesNumber": 2,
 				"leagues": [
 				  "NBA"
@@ -3737,6 +3742,7 @@
 			  {
 				"id": "e7b9646c-9997-46c8-909f-2a2b67389023",
 				"flowName": "Base Set",
+				"simpleId": "51",
 				"setVisualId": "SET_VISUAL_COMMON",
 				"flowSeriesNumber": 4,
 				"leagues": [

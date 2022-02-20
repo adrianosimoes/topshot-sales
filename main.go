@@ -47,7 +47,7 @@ func main() {
 		handleErr(err)
 		//fmt.Println("current height: ", latestBlock.Height)
 
-		blockSize := 10
+		blockSize := 20
 		
 		//start := time.Now()
 		for i := 0; i < blockSize; i+=blockSize {
@@ -82,23 +82,29 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 			if (previousId == eventId) {
 				continue
 			}
+			
+			// Excluse Base Set s2 and s3 that are very cheap:
+			// if(saleMoment.SetID() == 26 || saleMoment.SetID() == 51){
+			//		return
+			// }
 
-			if(e.Price() <= 10){
+			if(e.Price() <= 200){
 				// start := time.Now()
 
 				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), eventId)
 				handleErr(err)
+
 				// elapsed := time.Since(start)
-    // 			fmt.Println("Getting sale moment took %s", elapsed)
-    			
+				// fmt.Println("Getting sale moment took %s", elapsed)
 				if(shouldPrintPlayer(e, saleMoment)){
+					//fmt.Println("event", e)
 					//start := time.Now()
 
-					//fmt.Println("event id",eventId,"previousId",previousId)
+					// fmt.Println("event id",eventId,"previousId",previousId)
 					printPlayer(saleMoment, true)
 
 					// elapsed := time.Since(start)
-    	// 			fmt.Println("Print player took %s", elapsed)
+					// fmt.Println("Print player took %s", elapsed)
 
     				previousId = eventId
 				}
@@ -117,23 +123,23 @@ func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bo
 		return true;	
 	}
 	
-	if(sale.SetID() != 26 && moment.Price() <= 2){
+	if(moment.Price() <= 0){
 		return true;	
 	}
 	
-	if(moment.Price() <= 5 && sale.SerialNumber() < 100) {
+	if(moment.Price() <= 10 && sale.NumMoments() <= 9998) {
 		return true;	
 	}
 	
-	if(moment.Price() <= 5 && sale.SerialNumber() < 200 && sale.NumMoments() <= 15000) {
+	if(moment.Price() <= 30 && sale.SerialNumber() < 100) {
 		return true;	
 	}
 
-	if(moment.Price() <= 5 && sale.SerialNumber() < 500 && sale.NumMoments() <= 15000) {
+	if(moment.Price() <= 10 && sale.SerialNumber() < 500 && sale.NumMoments() <= 15000) {
 		return true;	
 	}
 	
-	if(moment.Price() <= 5 && sale.SerialNumber() <= 500){
+	if(moment.Price() <= 10 && sale.SerialNumber() <= 100){
 		return true;
 	}
 
@@ -162,6 +168,7 @@ func isMomentSerialLow(sale *topshot.SaleMoment) bool {
 }
 
 func printPlayer(saleMoment *topshot.SaleMoment, printURL bool) {
+	fmt.Println(" ");
 	c := color.New(color.FgWhite)
 	if (isMomentVeryRare(saleMoment)) {
 		c = c.Add(color.FgGreen) 
@@ -221,11 +228,15 @@ func getMomentInfoFromPlayerID(playerId int, momentsCount uint32, price float64)
 }
 
 func getPlayerURL(saleMoment *topshot.SaleMoment) string {
-		fmt.Println("getPlayerURL", saleMoment);
 		playData := saleMoment.Play()
+		//fmt.Println("play data", playData);
 		playerIdStr := gameData.GetPlayerIDForName(playData["FullName"])
 		
 		playerId, _ := strconv.Atoi(playerIdStr)
+		
+		setId:= gameData.GetSetIdByName(saleMoment.SetName(),strconv.FormatUint(uint64(saleMoment.SetID()),10))
+		playerUrl := "https://www.nbatopshot.com/search?byPlayers="+gameData.GetPlayerIDForName(playData["FullName"])+"&bySets="+setId
+		return playerUrl
 
 		fmt.Println("https://www.nbatopshot.com/search?byPlayers="+gameData.GetPlayerIDForName(playData["FullName"]))
 		jsonBytes := getMomentInfoFromPlayerID(playerId, saleMoment.NumMoments(), saleMoment.Price())

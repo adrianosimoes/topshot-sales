@@ -25,6 +25,26 @@ func (data Data) GetPlayerIDForName(name string) string {
    return ""
 }
 
+func (data Data) GetSetIdByName(setName string, setSimpleId string) string {
+
+	// Quick hack for the Sets that have the same Name ("Base Set", "Rising Stars") but different ids: 
+	if( setSimpleId=="2" || setSimpleId=="26" ||  setSimpleId=="51" || setSimpleId=="35" || setSimpleId=="60"){
+		for _, set := range data.AllSets.Data {
+		  if (set.SimpleId == setSimpleId) {
+			 return set.ID   
+		  }
+	   }
+	}
+   
+   for _, set := range data.AllSets.Data {
+      if (set.Name == setName) {
+         return set.ID   
+      }
+   }
+
+   return ""
+}
+
 type AllPlayers struct {
    size   int `json:"size"`
    Data   []Player `json:"data"`
@@ -36,7 +56,7 @@ type AllTeams struct {
 }
 
 type AllSets struct {
-   Data   []Player `json:"data"`
+   Data   []Set `json:"data"`
 }
 
 type Player struct {
@@ -53,6 +73,7 @@ type Team struct {
 
 type Set struct {
    ID   string `json:"id"`
+   SimpleId   string `json:"simpleId"`
    Name   string `json:"flowName"`
    VisualID   string `json:"setVisualId"`
    SerialNumber   string `json:"flowSerialNumber"`

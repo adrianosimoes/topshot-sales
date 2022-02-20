@@ -50,7 +50,8 @@ func GetSaleMomentFromOwnerAtBlock(flowClient *client.Client, blockHeight uint64
 	if err != nil {
 		return nil, fmt.Errorf("error fetching sale moment from flow: %w", err)
 	}
-	//fmt.Println("res:",res.(cadence.Struct))
+	// fmt.Println("momentID value:",cadence.UInt64(momentFlowID))
+	// fmt.Println("res:",res.(cadence.Struct))
 	saleMoment := SaleMoment(res.(cadence.Struct))
 	
 	return &saleMoment, nil
@@ -66,12 +67,20 @@ func (s SaleMoment) PlayID() uint32 {
 	return uint32(s.Fields[1].(cadence.UInt32))
 }
 
+func (s SaleMoment) SetID() uint32 {
+	return uint32(s.Fields[3].(cadence.UInt32))
+}
+
 func (s SaleMoment) SetName() string {
 	return string(s.Fields[4].(cadence.String))
 }
 
-func (s SaleMoment) SetID() uint32 {
-	return uint32(s.Fields[3].(cadence.UInt32))
+func (s SaleMoment) SerialNumber() uint32 {
+	return uint32(s.Fields[5].(cadence.UInt32))
+}
+
+func (s SaleMoment) Price() float64 {
+	return float64(s.Fields[6].(cadence.UFix64) / 100000000)
 }
 
 func (s SaleMoment) NumMoments() uint32 {
@@ -86,10 +95,6 @@ func (s SaleMoment) JerseyNumber() uint32 {
 	return uint32(jersey)
 }
 
-func (s SaleMoment) Price() float64 {
-	return float64(s.Fields[6].(cadence.UFix64) / 100000000)
-}
-
 func (s SaleMoment) Play() map[string]string {		
 	dict := s.Fields[2].(cadence.Dictionary)
 	res := map[string]string{}
@@ -99,13 +104,9 @@ func (s SaleMoment) Play() map[string]string {
 	return res
 }
 
-func (s SaleMoment) SerialNumber() uint32 {
-	return uint32(s.Fields[5].(cadence.UInt32))
-}
-
 func (s SaleMoment) String() string {
 	playData := s.Play()
-	//fmt.Println("\ns Moment:", s)
-	return fmt.Sprintf("%s\t %s\t %d #%d / #%d",
-						s.SetName(), playData["FullName"], s.JerseyNumber(), s.SerialNumber(), s.NumMoments())
+	return fmt.Sprintf("%s (%d)\t %s\t %d #%d / #%d",
+						s.SetName(),s.SetID(),playData["FullName"], s.JerseyNumber(), s.SerialNumber(), s.NumMoments())
 }
+
