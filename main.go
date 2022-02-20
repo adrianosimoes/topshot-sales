@@ -39,7 +39,7 @@ func main() {
 	// latestBlock, err := flowClient.GetLatestBlock(context.Background(), true)
 	// handleErr(err)
 
-	//fetchBlocks(flowClient, int64(latestBlock.Height - 50), int64(latestBlock.Height), "A.c1e4f4f4c4257510.Market.MomentListed")
+	//fetchBlocks(flowClient, int64(latestBlock.Height - 50), int64(latestBlock.Height), "A.c1e4f4f4c4257510.TopShotMarketV3.MomentListed")
 
 	for {
 		// fetch latest block
@@ -53,9 +53,7 @@ func main() {
 		for i := 0; i < blockSize; i+=blockSize {
 			//fmt.Println("current block: ", int64(latestBlock.Height) - int64(i))
 			
-			fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentListed")
-
-			//fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.Market.MomentPriceChanged")
+			fetchBlocks(flowClient, int64(latestBlock.Height) - int64(i) - int64(blockSize), int64(latestBlock.Height) - int64(i), "A.c1e4f4f4c4257510.TopShotMarketV3.MomentListed")
 		}
 		// elapsed := time.Since(start)
 		// fmt.Println("Fetch block took %s", elapsed)
@@ -77,7 +75,6 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 
 		for _, sellerEvent := range blockEvent.Events {
 			// loop through the Market.MomentListed/PriceChanged events in this blockEvent
-			// fmt.Println(sellerEvent.Value)
 			e := topshot.MomentListed(sellerEvent.Value)
 
 			eventId := e.Id()
@@ -86,7 +83,7 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 				continue
 			}
 
-			if(e.Price() <= 60){
+			if(e.Price() <= 10){
 				// start := time.Now()
 
 				saleMoment, err := topshot.GetSaleMomentFromOwnerAtBlock(flowClient, blockEvent.Height, *e.Seller(), eventId)
@@ -112,56 +109,31 @@ func fetchBlocks(flowClient *client.Client, startBlock int64, endBlock int64, ty
 }
 
 func shouldPrintPlayer(moment topshot.MomentListed, sale *topshot.SaleMoment) bool {
-	if(moment.Price() < 4){
-		return true;
-	}
-
 	if(sale == nil) {
 		return false;
 	}
-
-	//document.querySelector('[data-testid="selectMoment"]').click()
-
-	// if ((strings.Contains(sale.Play()["FullName"],"Serge Ibaka") && (sale.NumMoments() <= 15000 && moment.Price() < 52)) ||
-	// 	(strings.Contains(sale.Play()["FullName"],"Dwight Howard") && (sale.NumMoments() <= 15000 && moment.Price() < 58)) ||
-	// 	(strings.Contains(sale.Play()["FullName"],"Montrezl Harrell") && (sale.NumMoments() <= 35000 && moment.Price() < 24)) ||
-	// 	(strings.Contains(sale.Play()["FullName"],"Steven Adams") && (sale.NumMoments() <= 35000 && moment.Price() < 21)) ||
-	// 	(strings.Contains(sale.Play()["FullName"],"Bogdan") && (sale.NumMoments() <= 20000 && moment.Price() < 35)) ||
-	// 	(strings.Contains(sale.Play()["FullName"],"Gordon Hayward") && (sale.NumMoments() <= 20000 && moment.Price() < 39)) ||
-	// 	(strings.Contains(sale.Play()["FullName"],"Christian Wood") && (sale.NumMoments() <= 20000 && moment.Price() < 36))||
-	// 	(strings.Contains(sale.Play()["FullName"],"Chris Paul") && (sale.NumMoments() <= 20000 && moment.Price() < 48))) {
-	// 	return true;	
-	// }
 	
 	if(sale.SerialNumber() == sale.JerseyNumber()){
 		return true;	
 	}
 	
-	if(sale.SetID() != 26 && ( moment.Price() <= 70 || (sale.SetID() == 2 || sale.SetID() == 32 || sale.SetID() == 33 || sale.SetID() == 34) && moment.Price() <= 70)){
+	if(sale.SetID() != 26 && moment.Price() <= 2){
 		return true;	
 	}
 	
-	if(moment.Price() <= 25 && sale.SerialNumber() < 300 && sale.NumMoments() <= 12000) {
+	if(moment.Price() <= 5 && sale.SerialNumber() < 100) {
+		return true;	
+	}
+	
+	if(moment.Price() <= 5 && sale.SerialNumber() < 200 && sale.NumMoments() <= 15000) {
 		return true;	
 	}
 
-	if(moment.Price() <= 12 && sale.SerialNumber() < 1000 && sale.NumMoments() <= 12000) {
+	if(moment.Price() <= 5 && sale.SerialNumber() < 500 && sale.NumMoments() <= 15000) {
 		return true;	
 	}
 	
-	if(moment.Price() <= 10 && sale.SerialNumber() <= 2500 && sale.NumMoments() <= 15000){
-		return true;	
-	}
-	
-	if(moment.Price() <= 15 && sale.SerialNumber() <= 250 && sale.NumMoments() < 35000){
-		return true;	
-	}
-	
-	if(moment.Price() <= 10 && sale.SerialNumber() <= 500 && sale.NumMoments() < 35000){
-		return true;	
-	}
-	
-	if(moment.Price() <= 10 && sale.SerialNumber() <= 200){
+	if(moment.Price() <= 5 && sale.SerialNumber() <= 500){
 		return true;
 	}
 
@@ -242,27 +214,30 @@ func getMomentInfoFromPlayerID(playerId int, momentsCount uint32, price float64)
 
 	args := []string{"--header", "Content-Type: application/json", "--data", queryData, "https://api.nbatopshot.com/marketplace/graphql?SearchMomentListingsDefault"}
 	c := exec.Command("curl",args...)
-
+	//fmt.Println("args:", queryData);
 	output,_ := c.Output()
 
 	return output
 }
 
 func getPlayerURL(saleMoment *topshot.SaleMoment) string {
+		fmt.Println("getPlayerURL", saleMoment);
 		playData := saleMoment.Play()
 		playerIdStr := gameData.GetPlayerIDForName(playData["FullName"])
 		
 		playerId, _ := strconv.Atoi(playerIdStr)
 
-		//fmt.Println("https://www.nbatopshot.com/search?byPlayers="+gameData.GetPlayerIDForName(playData["FullName"]))
+		fmt.Println("https://www.nbatopshot.com/search?byPlayers="+gameData.GetPlayerIDForName(playData["FullName"]))
 		jsonBytes := getMomentInfoFromPlayerID(playerId, saleMoment.NumMoments(), saleMoment.Price())
-
-		var postData topshot.POSTData	
+		var postData topshot.POSTData
+		//jsonString := string(jsonBytes[:])
+		//fmt.Println("received",jsonString)
 		err :=json.Unmarshal(jsonBytes, &postData)
 		if err != nil {
 			fmt.Println("error:", err)
 		}	
 
+		// fmt.Println("received",postData)
 		momentListings := postData.GetMomentListings()
 		momentCount := len(momentListings)
 

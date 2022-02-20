@@ -39,7 +39,7 @@ func GetSaleMomentFromOwnerAtBlock(flowClient *client.Client, blockHeight uint64
 
 		pub fun main(owner:Address, momentID:UInt64): SaleMoment {
 			let acct = getAccount(owner)
-            let collectionRef = acct.getCapability(/public/topshotSaleCollection)!.borrow<&{Market.SalePublic}>() ?? panic("Could not borrow capability from public collection")
+            let collectionRef = acct.getCapability(/public/topshotSalev3Collection)!.borrow<&{Market.SalePublic}>() ?? panic("Could not borrow capability from public collection")
 			return SaleMoment(moment: collectionRef.borrowMoment(id: momentID)!, price: collectionRef.getPrice(tokenID: momentID)!)
 		}
 `
