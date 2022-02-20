@@ -28,7 +28,7 @@ func (data Data) GetPlayerIDForName(name string) string {
 func (data Data) GetSetIdByName(setName string, setSimpleId string) string {
 
 	// Quick hack for the Sets that have the same Name ("Base Set", "Rising Stars") but different ids: 
-	if( setSimpleId=="2" || setSimpleId=="26" ||  setSimpleId=="51" || setSimpleId=="35" || setSimpleId=="60"){
+	if( setSimpleId=="2" || setSimpleId=="26" ||  setSimpleId=="51" || setSimpleId=="35" || setSimpleId=="60" || setSimpleId=="58"){
 		for _, set := range data.AllSets.Data {
 		  if (set.SimpleId == setSimpleId) {
 			 return set.ID   
