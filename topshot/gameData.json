@@ -1,1552 +1,3042 @@
 {
   "allPlayers":{
-     "size":309,
+     "size":607,
      "data":[
         {
-           "id":"203932",
-           "name":"Aaron Gordon",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630174",
-           "name":"Aaron Nesmith",
-           "__typename":"Player"
-        },
-        {
-           "id":"202692",
-           "name":"Alec Burks",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627936",
-           "name":"Alex Caruso",
-           "__typename":"Player"
-        },
-        {
-           "id":"201143",
-           "name":"Al Horford",
-           "__typename":"Player"
-        },
-        {
-           "id":"2405",
-           "name":"Amar'e Stoudemire",
-           "__typename":"Player"
-        },
-        {
-           "id":"2760",
-           "name":"Anderson Varejão",
-           "__typename":"Player"
-        },
-        {
-           "id":"203083",
-           "name":"Andre Drummond",
-           "__typename":"Player"
-        },
-        {
-           "id":"2738",
-           "name":"Andre Iguodala",
-           "__typename":"Player"
-        },
-        {
-           "id":"101106",
-           "name":"Andrew Bogut",
-           "__typename":"Player"
-        },
-        {
-           "id":"203952",
-           "name":"Andrew Wiggins",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629014",
-           "name":"Anfernee Simons",
-           "__typename":"Player"
-        },
-        {
-           "id":"203076",
-           "name":"Anthony Davis",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630162",
-           "name":"Anthony Edwards",
-           "__typename":"Player"
-        },
-        {
-           "id":"203085",
-           "name":"Austin Rivers",
-           "__typename":"Player"
-        },
-        {
-           "id":"202340",
-           "name":"Avery Bradley",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628389",
-           "name":"Bam Adebayo",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627732",
-           "name":"Ben Simmons",
-           "__typename":"Player"
-        },
-        {
-           "id":"202687",
-           "name":"Bismack Biyombo",
-           "__typename":"Player"
-        },
-        {
-           "id":"201933",
-           "name":"Blake Griffin",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626246",
-           "name":"Boban Marjanovic",
-           "__typename":"Player"
-        },
-        {
-           "id":"203992",
-           "name":"Bogdan Bogdanović",
-           "__typename":"Player"
-        },
-        {
-           "id":"202711",
-           "name":"Bojan Bogdanović",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629626",
-           "name":"Bol Bol",
-           "__typename":"Player"
-        },
-        {
-           "id":"203078",
-           "name":"Bradley Beal",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629634",
-           "name":"Brandon Clarke",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627742",
-           "name":"Brandon Ingram",
-           "__typename":"Player"
-        },
-        {
-           "id":"201572",
-           "name":"Brook Lopez",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628971",
-           "name":"Bruce Brown",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628981",
-           "name":"Bruno Fernando",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627741",
-           "name":"Buddy Hield",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628997",
-           "name":"Caleb Martin",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629661",
-           "name":"Cameron Johnson",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626166",
-           "name":"Cameron Payne",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629629",
-           "name":"Cam Reddish",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627747",
-           "name":"Caris LeVert",
-           "__typename":"Player"
-        },
-        {
-           "id":"2546",
-           "name":"Carmelo Anthony",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626224",
-           "name":"Cedi Osman",
-           "__typename":"Player"
-        },
-        {
-           "id":"1497",
-           "name":"Chauncey Billups",
-           "__typename":"Player"
-        },
-        {
-           "id":"2547",
-           "name":"Chris Bosh",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628449",
-           "name":"Chris Boucher",
-           "__typename":"Player"
-        },
-        {
-           "id":"101108",
-           "name":"Chris Paul",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626174",
-           "name":"Christian Wood",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629643",
-           "name":"Chuma Okeke",
-           "__typename":"Player"
-        },
-        {
-           "id":"203468",
-           "name":"CJ McCollum",
-           "__typename":"Player"
-        },
-        {
-           "id":"203991",
-           "name":"Clint Capela",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629632",
-           "name":"Coby White",
-           "__typename":"Player"
-        },
-        {
-           "id":"203469",
-           "name":"Cody Zeller",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630175",
-           "name":"Cole Anthony",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629012",
-           "name":"Collin Sexton",
-           "__typename":"Player"
-        },
-        {
-           "id":"203081",
-           "name":"Damian Lillard",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627814",
-           "name":"Damion Lee",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626156",
-           "name":"D'Angelo Russell",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628464",
-           "name":"Daniel Theis",
-           "__typename":"Player"
-        },
-        {
-           "id":"201568",
-           "name":"Danilo Gallinari",
-           "__typename":"Player"
-        },
-        {
-           "id":"101122",
-           "name":"Danny Granger",
-           "__typename":"Player"
-        },
-        {
-           "id":"201980",
-           "name":"Danny Green",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627863",
-           "name":"Danuel House Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629647",
-           "name":"Darius Bazley",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629636",
-           "name":"Darius Garland",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628021",
-           "name":"David Nwaba",
-           "__typename":"Player"
-        },
-        {
-           "id":"202722",
-           "name":"Dāvis Bertāns",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628368",
-           "name":"De'Aaron Fox",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629028",
-           "name":"Deandre Ayton",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629631",
-           "name":"De'Andre Hunter",
-           "__typename":"Player"
-        },
-        {
-           "id":"201599",
-           "name":"DeAndre Jordan",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629001",
-           "name":"De'Anthony Melton",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627749",
-           "name":"Dejounte Murray",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626153",
-           "name":"Delon Wright",
-           "__typename":"Player"
-        },
-        {
-           "id":"202326",
-           "name":"DeMarcus Cousins",
-           "__typename":"Player"
-        },
-        {
-           "id":"201942",
-           "name":"Demar DeRozan",
-           "__typename":"Player"
-        },
-        {
-           "id":"201942",
-           "name":"DeMar DeRozan",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630166",
-           "name":"Deni Avdija",
-           "__typename":"Player"
-        },
-        {
-           "id":"203471",
-           "name":"Dennis Schröder",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628372",
-           "name":"Dennis Smith Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627884",
-           "name":"Derrick Jones Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"201565",
-           "name":"Derrick Rose",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630217",
-           "name":"Desmond Bane",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626164",
-           "name":"Devin Booker",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630170",
-           "name":"Devin Vassell",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628984",
-           "name":"Devonte' Graham",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628415",
-           "name":"Dillon Brooks",
-           "__typename":"Player"
-        },
-        {
-           "id":"1717",
-           "name":"Dirk Nowitzki",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627734",
-           "name":"Domantas Sabonis",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628378",
-           "name":"Donovan Mitchell",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628978",
-           "name":"Donte DiVincenzo",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627827",
-           "name":"Dorian Finney-Smith",
-           "__typename":"Player"
-        },
-        {
-           "id":"203110",
-           "name":"Draymond Green",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629130",
-           "name":"Duncan Robinson",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628407",
-           "name":"Dwayne Bacon",
-           "__typename":"Player"
-        },
-        {
-           "id":"2730",
-           "name":"Dwight Howard",
-           "__typename":"Player"
-        },
-        {
-           "id":"203939",
-           "name":"Dwight Powell",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628410",
-           "name":"Edmond Sumner",
-           "__typename":"Player"
-        },
-        {
-           "id":"203901",
-           "name":"Elfrid Payton",
-           "__typename":"Player"
-        },
-        {
-           "id":"202683",
-           "name":"Enes Kanter",
-           "__typename":"Player"
-        },
-        {
-           "id":"202339",
-           "name":"Eric Bledsoe",
-           "__typename":"Player"
-        },
-        {
-           "id":"201569",
-           "name":"Eric Gordon",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629672",
-           "name":"Eric Paschall",
-           "__typename":"Player"
-        },
-        {
-           "id":"203095",
-           "name":"Evan Fournier",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630267",
-           "name":"Facundo Campazzo",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627832",
-           "name":"Fred VanVleet",
-           "__typename":"Player"
-        },
-        {
-           "id":"203914",
-           "name":"Gary Harris",
-           "__typename":"Player"
-        },
-        {
-           "id":"201588",
-           "name":"George Hill",
-           "__typename":"Player"
-        },
-        {
-           "id":"203507",
-           "name":"Giannis Antetokounmpo",
-           "__typename":"Player"
-        },
-        {
-           "id":"203922",
-           "name":"Glenn Robinson III",
-           "__typename":"Player"
-        },
-        {
-           "id":"201609",
-           "name":"Goran Dragić",
-           "__typename":"Player"
-        },
-        {
-           "id":"201609",
-           "name":"Goran Dragić ",
-           "__typename":"Player"
-        },
-        {
-           "id":"202330",
-           "name":"Gordon Hayward",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628960",
-           "name":"Grayson Allen",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628977",
-           "name":"Hamidou Diallo",
-           "__typename":"Player"
-        },
-        {
-           "id":"203084",
-           "name":"Harrison Barnes",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628385",
-           "name":"Harry Giles",
-           "__typename":"Player"
-        },
-        {
-           "id":"202355",
-           "name":"Hassan Whiteside",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630193",
-           "name":"Immanuel Quickley",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630171",
-           "name":"Isaac Okoro",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630198",
-           "name":"Isaiah Joe",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629676",
-           "name":"Isaiah Roby",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630191",
-           "name":"Isaiah Stewart",
-           "__typename":"Player"
-        },
-        {
-           "id":"202397",
-           "name":"Ish Smith",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627826",
-           "name":"Ivica Zubac",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630183",
-           "name":"Jaden McDaniels",
-           "__typename":"Player"
-        },
-        {
-           "id":"203109",
-           "name":"Jae Crowder",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630256",
-           "name":"Jae'Sean Tate",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627751",
-           "name":"Jakob Poeltl",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628973",
-           "name":"Jalen Brunson",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630188",
-           "name":"Jalen Smith",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627750",
-           "name":"Jamal Murray",
-           "__typename":"Player"
-        },
-        {
-           "id":"2749",
-           "name":"Jameer Nelson",
-           "__typename":"Player"
-        },
-        {
-           "id":"203516",
-           "name":"James Ennis III",
-           "__typename":"Player"
-        },
-        {
-           "id":"201935",
-           "name":"James Harden",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630164",
-           "name":"James Wiseman",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629630",
-           "name":"Ja Morant",
-           "__typename":"Player"
-        },
-        {
-           "id":"203210",
-           "name":"JaMychal Green",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628991",
-           "name":"Jaren Jackson Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629714",
-           "name":"Jarrell Brantley",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628386",
-           "name":"Jarrett Allen",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629633",
-           "name":"Jarrett Culver",
-           "__typename":"Player"
-        },
-        {
-           "id":"201580",
-           "name":"JaVale McGee",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629637",
-           "name":"Jaxson Hayes",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627759",
-           "name":"Jaylen Brown",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628369",
-           "name":"Jayson Tatum",
-           "__typename":"Player"
-        },
-        {
-           "id":"201952",
-           "name":"Jeff Teague",
-           "__typename":"Player"
-        },
-        {
-           "id":"203924",
-           "name":"Jerami Grant",
-           "__typename":"Player"
-        },
-        {
-           "id":"202710",
-           "name":"Jimmy Butler",
-           "__typename":"Player"
-        },
-        {
-           "id":"203925",
-           "name":"Joe Harris",
-           "__typename":"Player"
-        },
-        {
-           "id":"204060",
-           "name":"Joe Ingles",
-           "__typename":"Player"
-        },
-        {
-           "id":"203954",
-           "name":"Joel Embiid",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628381",
-           "name":"John Collins",
-           "__typename":"Player"
-        },
-        {
-           "id":"202322",
-           "name":"John Wall",
-           "__typename":"Player"
-        },
-        {
-           "id":"202685",
-           "name":"Jonas Valančiūnas",
-           "__typename":"Player"
-        },
-        {
-           "id":"203903",
-           "name":"Jordan Clarkson",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629162",
-           "name":"Jordan McLaughlin",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629670",
-           "name":"Jordan Nwora",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630182",
-           "name":"Josh Green",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628404",
-           "name":"Josh Hart",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628367",
-           "name":"Josh Jackson",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629006",
-           "name":"Josh Okogie",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626196",
-           "name":"Josh Richardson",
-           "__typename":"Player"
-        },
-        {
-           "id":"201950",
-           "name":"Jrue Holiday",
-           "__typename":"Player"
-        },
-        {
-           "id":"203944",
-           "name":"Julius Randle",
-           "__typename":"Player"
-        },
-        {
-           "id":"203200",
-           "name":"Justin Holiday",
-           "__typename":"Player"
-        },
-        {
-           "id":"203994",
-           "name":"Jusuf Nurkić",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626157",
-           "name":"Karl-Anthony Towns",
-           "__typename":"Player"
-        },
-        {
-           "id":"202695",
-           "name":"Kawhi Leonard",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629640",
-           "name":"Keldon Johnson",
-           "__typename":"Player"
-        },
-        {
-           "id":"203482",
-           "name":"Kelly Olynyk",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626162",
-           "name":"Kelly Oubre Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"202689",
-           "name":"Kemba Walker",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629134",
-           "name":"Kendrick Nunn",
-           "__typename":"Player"
-        },
-        {
-           "id":"203484",
-           "name":"Kentavious Caldwell-Pope",
-           "__typename":"Player"
-        },
-        {
-           "id":"201142",
-           "name":"Kevin Durant",
-           "__typename":"Player"
-        },
-        {
-           "id":"708",
-           "name":"Kevin Garnett",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628989",
-           "name":"Kevin Huerter",
-           "__typename":"Player"
-        },
-        {
-           "id":"201567",
-           "name":"Kevin Love",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629645",
-           "name":"Kevin Porter Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"203920",
-           "name":"Khem Birch",
-           "__typename":"Player"
-        },
-        {
-           "id":"203114",
-           "name":"Khris Middleton",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630165",
-           "name":"Killian Hayes",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630184",
-           "name":"Kira Lewis Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"204001",
-           "name":"Kristaps Porziņģis",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629065",
-           "name":"Ky Bowman",
-           "__typename":"Player"
-        },
-        {
-           "id":"203937",
-           "name":"Kyle Anderson",
-           "__typename":"Player"
-        },
-        {
-           "id":"200768",
-           "name":"Kyle Lowry",
-           "__typename":"Player"
-        },
-        {
-           "id":"202681",
-           "name":"Kyrie Irving",
-           "__typename":"Player"
-        },
-        {
-           "id":"200746",
-           "name":"LaMarcus Aldridge",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630163",
-           "name":"LaMelo Ball",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629013",
-           "name":"Landry Shamet",
-           "__typename":"Player"
-        },
-        {
-           "id":"204038",
-           "name":"Langston Galloway",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626204",
-           "name":"Larry Nance Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628374",
-           "name":"Lauri Markkanen",
-           "__typename":"Player"
-        },
-        {
-           "id":"2571",
-           "name":"Leandro Barbosa",
-           "__typename":"Player"
-        },
-        {
-           "id":"2544",
-           "name":"LeBron James",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629022",
-           "name":"Lonnie Walker",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629022",
-           "name":"Lonnie Walker IV",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628366",
-           "name":"Lonzo Ball",
-           "__typename":"Player"
-        },
-        {
-           "id":"101150",
-           "name":"Lou Williams",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629652",
-           "name":"Luguentz Dort",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629029",
-           "name":"Luka Dončić",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628436",
-           "name":"Luke Kornet",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627763",
-           "name":"Malcolm Brogdon",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627736",
-           "name":"Malik Beasley",
-           "__typename":"Player"
-        },
-        {
-           "id":"1938",
-           "name":"Manu Ginobili",
-           "__typename":"Player"
-        },
-        {
-           "id":"201188",
-           "name":"Marc Gasol",
-           "__typename":"Player"
-        },
-        {
-           "id":"202694",
-           "name":"Marcus Morris",
-           "__typename":"Player"
-        },
-        {
-           "id":"203935",
-           "name":"Marcus Smart",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628365",
-           "name":"Markelle Fultz",
-           "__typename":"Player"
-        },
-        {
-           "id":"202693",
-           "name":"Markieff Morris",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627737",
-           "name":"Marquese Chriss",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628963",
-           "name":"Marvin Bagley III",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630222",
-           "name":"Mason Jones",
-           "__typename":"Player"
-        },
-        {
-           "id":"203486",
-           "name":"Mason Plumlee",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629680",
-           "name":"Matisse Thybulle",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628467",
-           "name":"Maxi Kleber",
-           "__typename":"Player"
-        },
-        {
-           "id":"203487",
-           "name":"Michael Carter-Williams",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629008",
-           "name":"Michael Porter Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628969",
-           "name":"Mikal Bridges",
-           "__typename":"Player"
-        },
-        {
-           "id":"201144",
-           "name":"Mike Conley",
-           "__typename":"Player"
-        },
-        {
-           "id":"203488",
-           "name":"Mike Muscala",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628970",
-           "name":"Miles Bridges",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629011",
-           "name":"Mitchell Robinson",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628964",
-           "name":"Mo Bamba",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626149",
-           "name":"Montrezl Harrell",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629021",
-           "name":"Moritz Wagner",
-           "__typename":"Player"
-        },
-        {
-           "id":"2590",
-           "name":"Mo Williams",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628539",
-           "name":"Mychal Mulder",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626167",
-           "name":"Myles Turner",
-           "__typename":"Player"
-        },
-        {
-           "id":"202357",
-           "name":"Nemanja Bjelica",
-           "__typename":"Player"
-        },
-        {
-           "id":"203457",
-           "name":"Nerlens Noel",
-           "__typename":"Player"
-        },
-        {
-           "id":"2555",
-           "name":"Nick Collison",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629638",
-           "name":"Nickeil Alexander-Walker",
-           "__typename":"Player"
-        },
-        {
-           "id":"203999",
-           "name":"Nikola Jokić",
-           "__typename":"Player"
-        },
-        {
-           "id":"202696",
-           "name":"Nikola Vučević",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626181",
-           "name":"Norman Powell",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630167",
-           "name":"Obi Toppin",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628384",
-           "name":"Og Anunoby",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628384",
-           "name":"OG Anunoby",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630168",
-           "name":"Onyeka Okongwu",
-           "__typename":"Player"
-        },
-        {
-           "id":"203490",
-           "name":"Otto Porter Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"1627783",
-           "name":"Pascal Siakam",
-           "__typename":"Player"
-        },
-        {
-           "id":"201976",
-           "name":"Patrick Beverley",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630172",
-           "name":"Patrick Williams",
-           "__typename":"Player"
-        },
-        {
-           "id":"201988",
-           "name":"Patty Mills",
-           "__typename":"Player"
-        },
-        {
-           "id":"202331",
-           "name":"Paul George",
-           "__typename":"Player"
-        },
-        {
-           "id":"1718",
-           "name":"Paul Pierce",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630202",
-           "name":"Payton Pritchard",
-           "__typename":"Player"
-        },
-        {
-           "id":"200782",
-           "name":"P.J. Tucker",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629023",
-           "name":"P.J. Washington",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630173",
-           "name":"Precious Achiuwa",
-           "__typename":"Player"
-        },
-        {
-           "id":"200765",
-           "name":"Rajon Rondo",
-           "__typename":"Player"
-        },
-        {
-           "id":"951",
-           "name":"Ray Allen",
-           "__typename":"Player"
-        },
-        {
-           "id":"203493",
-           "name":"Reggie Bullock",
-           "__typename":"Player"
-        },
-        {
-           "id":"202704",
-           "name":"Reggie Jackson",
-           "__typename":"Player"
-        },
-        {
-           "id":"201937",
-           "name":"Ricky Rubio",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629628",
-           "name":"RJ Barrett",
-           "__typename":"Player"
-        },
-        {
-           "id":"203496",
-           "name":"Robert Covington",
-           "__typename":"Player"
-        },
-        {
-           "id":"201577",
-           "name":"Robin Lopez",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626220",
-           "name":"Royce O'Neale",
-           "__typename":"Player"
-        },
-        {
-           "id":"201579",
-           "name":"Roy Hibbert",
-           "__typename":"Player"
-        },
-        {
-           "id":"200752",
-           "name":"Rudy Gay",
-           "__typename":"Player"
-        },
-        {
-           "id":"203497",
-           "name":"Rudy Gobert",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629060",
-           "name":"Rui Hachimura",
-           "__typename":"Player"
-        },
-        {
-           "id":"201566",
-           "name":"Russell Westbrook",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630241",
-           "name":"Sam Merrill",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630253",
-           "name":"Sean McDermott",
-           "__typename":"Player"
-        },
-        {
-           "id":"201586",
-           "name":"Serge Ibaka",
-           "__typename":"Player"
-        },
-        {
-           "id":"203552",
-           "name":"Seth Curry",
-           "__typename":"Player"
-        },
-        {
-           "id":"203894",
-           "name":"Shabazz Napier",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628983",
-           "name":"Shai Gilgeous-Alexander",
-           "__typename":"Player"
-        },
-        {
-           "id":"1890",
-           "name":"Shawn Marion",
-           "__typename":"Player"
-        },
-        {
-           "id":"203915",
-           "name":"Spencer Dinwiddie",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626169",
-           "name":"Stanley Johnson",
-           "__typename":"Player"
-        },
-        {
-           "id":"201939",
-           "name":"Steph Curry",
-           "__typename":"Player"
-        },
-        {
-           "id":"203500",
-           "name":"Steven Adams",
-           "__typename":"Player"
-        },
-        {
-           "id":"959",
-           "name":"Steve Nash",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629004",
-           "name":"Svi Mykhailiuk",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629605",
-           "name":"Tacko Fall",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629659",
-           "name":"Talen Horton-Tucker",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629056",
-           "name":"Terence Davis",
-           "__typename":"Player"
-        },
-        {
-           "id":"203082",
-           "name":"Terrence Ross",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626179",
-           "name":"Terry Rozier",
-           "__typename":"Player"
-        },
-        {
-           "id":"201152",
-           "name":"Thaddeus Young",
-           "__typename":"Player"
-        },
-        {
-           "id":"203648",
-           "name":"Thanasis Antetokounmpo",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630177",
-           "name":"Théo Maledon",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628418",
-           "name":"Thomas Bryant",
-           "__typename":"Player"
-        },
-        {
-           "id":"1495",
-           "name":"Tim Duncan",
-           "__typename":"Player"
-        },
-        {
-           "id":"203501",
-           "name":"Tim Hardaway Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"204456",
-           "name":"T.J. McConnell",
-           "__typename":"Player"
-        },
-        {
-           "id":"203933",
-           "name":"T.J. Warren",
-           "__typename":"Player"
-        },
-        {
-           "id":"202699",
-           "name":"Tobias Harris",
-           "__typename":"Player"
-        },
-        {
-           "id":"203107",
-           "name":"Tomáš Satoranský",
-           "__typename":"Player"
-        },
-        {
-           "id":"2225",
-           "name":"Tony Parker",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628470",
-           "name":"Torrey Craig",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629027",
-           "name":"Trae Young",
-           "__typename":"Player"
-        },
-        {
-           "id":"2772",
-           "name":"Trevor Ariza",
-           "__typename":"Player"
-        },
-        {
-           "id":"202684",
-           "name":"Tristan Thompson",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628972",
-           "name":"Troy Brown Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629639",
-           "name":"Tyler Herro",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630169",
-           "name":"Tyrese Haliburton",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630178",
-           "name":"Tyrese Maxey",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626145",
-           "name":"Tyus Jones",
-           "__typename":"Player"
-        },
-        {
-           "id":"2617",
-           "name":"Udonis Haslem",
-           "__typename":"Player"
-        },
-        {
-           "id":"203506",
-           "name":"Victor Oladipo",
-           "__typename":"Player"
-        },
-        {
-           "id":"1713",
-           "name":"Vince Carter",
-           "__typename":"Player"
-        },
-        {
-           "id":"1628976",
-           "name":"Wendell Carter Jr.",
-           "__typename":"Player"
-        },
-        {
-           "id":"203115",
-           "name":"Will Barton",
-           "__typename":"Player"
-        },
-        {
-           "id":"1626161",
-           "name":"Willie Cauley-Stein",
-           "__typename":"Player"
-        },
-        {
-           "id":"1630214",
-           "name":"Xavier Tillman",
-           "__typename":"Player"
-        },
-        {
-           "id":"203897",
-           "name":"Zach LaVine",
-           "__typename":"Player"
-        },
-        {
-           "id":"1629627",
-           "name":"Zion Williamson",
-           "__typename":"Player"
-        }
+    "name": "Aari McDonald",
+    "id": "1630462",
+    "__typename": "Player"
+  },
+  {
+    "name": "Aaron Gordon",
+    "id": "203932",
+    "__typename": "Player"
+  },
+  {
+    "name": "Aaron Holiday",
+    "id": "1628988",
+    "__typename": "Player"
+  },
+  {
+    "name": "Aaron Nesmith",
+    "id": "1630174",
+    "__typename": "Player"
+  },
+  {
+    "name": "Aaron Wiggins",
+    "id": "1630598",
+    "__typename": "Player"
+  },
+  {
+    "name": "A'ja Wilson",
+    "id": "1628932",
+    "__typename": "Player"
+  },
+  {
+    "name": "Alec Burks",
+    "id": "202692",
+    "__typename": "Player"
+  },
+  {
+    "name": "Aleksej Pokusevski",
+    "id": "1630197",
+    "__typename": "Player"
+  },
+  {
+    "name": "Alex Caruso",
+    "id": "1627936",
+    "__typename": "Player"
+  },
+  {
+    "name": "Alex Len",
+    "id": "203458",
+    "__typename": "Player"
+  },
+  {
+    "name": "Al Harrington",
+    "id": "1733",
+    "__typename": "Player"
+  },
+  {
+    "name": "Al Horford",
+    "id": "201143",
+    "__typename": "Player"
+  },
+  {
+    "name": "Allen Iverson",
+    "id": "947",
+    "__typename": "Player"
+  },
+  {
+    "name": "Allie Quigley",
+    "id": "201516",
+    "__typename": "Player"
+  },
+  {
+    "name": "Allisha Gray",
+    "id": "1628277",
+    "__typename": "Player"
+  },
+  {
+    "name": "Alonzo Mourning",
+    "id": "297",
+    "__typename": "Player"
+  },
+  {
+    "name": "Alperen Şengün",
+    "id": "1630578",
+    "__typename": "Player"
+  },
+  {
+    "name": "Amanda Zahui B",
+    "id": "204320",
+    "__typename": "Player"
+  },
+  {
+    "name": "Amar'e Stoudemire",
+    "id": "2405",
+    "__typename": "Player"
+  },
+  {
+    "name": "Amir Coffey",
+    "id": "1629599",
+    "__typename": "Player"
+  },
+  {
+    "name": "Anderson Varejão",
+    "id": "2760",
+    "__typename": "Player"
+  },
+  {
+    "name": "Andre Drummond",
+    "id": "203083",
+    "__typename": "Player"
+  },
+  {
+    "name": "Andre Iguodala",
+    "id": "2738",
+    "__typename": "Player"
+  },
+  {
+    "name": "Andrei Kirilenko",
+    "id": "1905",
+    "__typename": "Player"
+  },
+  {
+    "name": "Andre Miller",
+    "id": "1889",
+    "__typename": "Player"
+  },
+  {
+    "name": "Andrew Bogut",
+    "id": "101106",
+    "__typename": "Player"
+  },
+  {
+    "name": "Andrew Wiggins",
+    "id": "203952",
+    "__typename": "Player"
+  },
+  {
+    "name": "Anfernee Simons",
+    "id": "1629014",
+    "__typename": "Player"
+  },
+  {
+    "name": "Angel McCoughtry",
+    "id": "201881",
+    "__typename": "Player"
+  },
+  {
+    "name": "Antawn Jamison",
+    "id": "1712",
+    "__typename": "Player"
+  },
+  {
+    "name": "Anthony Davis",
+    "id": "203076",
+    "__typename": "Player"
+  },
+  {
+    "name": "Anthony Edwards",
+    "id": "1630162",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ariel Atkins",
+    "id": "1628878",
+    "__typename": "Player"
+  },
+  {
+    "name": "Arike Ogunbowale",
+    "id": "1629481",
+    "__typename": "Player"
+  },
+  {
+    "name": "Armoni Brooks",
+    "id": "1629717",
+    "__typename": "Player"
+  },
+  {
+    "name": "Aron Baynes",
+    "id": "203382",
+    "__typename": "Player"
+  },
+  {
+    "name": "Austin Reaves",
+    "id": "1630559",
+    "__typename": "Player"
+  },
+  {
+    "name": "Austin Rivers",
+    "id": "203085",
+    "__typename": "Player"
+  },
+  {
+    "name": "Avery Bradley",
+    "id": "202340",
+    "__typename": "Player"
+  },
+  {
+    "name": "Awak Kuier",
+    "id": "1630386",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ayo Dosunmu",
+    "id": "1630245",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bam Adebayo",
+    "id": "1628389",
+    "__typename": "Player"
+  },
+  {
+    "name": "Baron Davis",
+    "id": "1884",
+    "__typename": "Player"
+  },
+  {
+    "name": "Becky Hammon",
+    "id": "100342",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ben Gordon",
+    "id": "2732",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ben McLemore",
+    "id": "203463",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ben Simmons",
+    "id": "1627732",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ben Wallace",
+    "id": "1112",
+    "__typename": "Player"
+  },
+  {
+    "name": "Betnijah Laney",
+    "id": "204335",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bismack Biyombo",
+    "id": "202687",
+    "__typename": "Player"
+  },
+  {
+    "name": "Blake Griffin",
+    "id": "201933",
+    "__typename": "Player"
+  },
+  {
+    "name": "Boban Marjanovic",
+    "id": "1626246",
+    "__typename": "Player"
+  },
+  {
+    "name": "Boban Marjanović",
+    "id": "1626246",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bobby Portis",
+    "id": "1626171",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bogdan Bogdanović",
+    "id": "203992",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bojan Bogdanović",
+    "id": "202711",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bol Bol",
+    "id": "1629626",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bones Hyland",
+    "id": "1630538",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bonzi Wells",
+    "id": "1719",
+    "__typename": "Player"
+  },
+  {
+    "name": "Boris Diaw",
+    "id": "2564",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bradley Beal",
+    "id": "203078",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brad Wanamaker",
+    "id": "202954",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brandon Boston Jr.",
+    "id": "1630527",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brandon Clarke",
+    "id": "1629634",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brandon Ingram",
+    "id": "1627742",
+    "__typename": "Player"
+  },
+  {
+    "name": "Breanna Stewart",
+    "id": "1627668",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brianna Turner",
+    "id": "1629488",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brionna Jones",
+    "id": "1628280",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brittney Griner",
+    "id": "203398",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brittney Sykes",
+    "id": "1628279",
+    "__typename": "Player"
+  },
+  {
+    "name": "Brook Lopez",
+    "id": "201572",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bruce Brown",
+    "id": "1628971",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bruno Fernando",
+    "id": "1628981",
+    "__typename": "Player"
+  },
+  {
+    "name": "Bryn Forbes",
+    "id": "1627854",
+    "__typename": "Player"
+  },
+  {
+    "name": "Buddy Hield",
+    "id": "1627741",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cade Cunningham",
+    "id": "1630595",
+    "__typename": "Player"
+  },
+  {
+    "name": "Caleb Martin",
+    "id": "1628997",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cameron Johnson",
+    "id": "1629661",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cameron Payne",
+    "id": "1626166",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cam Reddish",
+    "id": "1629629",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cam Thomas",
+    "id": "1630560",
+    "__typename": "Player"
+  },
+  {
+    "name": "Candace Parker",
+    "id": "201496",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cappie Pondexter",
+    "id": "200665",
+    "__typename": "Player"
+  },
+  {
+    "name": "Caris LeVert",
+    "id": "1627747",
+    "__typename": "Player"
+  },
+  {
+    "name": "Carmelo Anthony",
+    "id": "2546",
+    "__typename": "Player"
+  },
+  {
+    "name": "Caron Butler",
+    "id": "2406",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cedi Osman",
+    "id": "1626224",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chamique Holdsclaw",
+    "id": "100356",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chandler Hutchison",
+    "id": "1628990",
+    "__typename": "Player"
+  },
+  {
+    "name": "Charli Collier",
+    "id": "1630454",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chauncey Billups",
+    "id": "1497",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chelsea Gray",
+    "id": "203833",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chimezie Metu",
+    "id": "1629002",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chris Bosh",
+    "id": "2547",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chris Boucher",
+    "id": "1628449",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chris Chiozza",
+    "id": "1629185",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chris Duarte",
+    "id": "1630537",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chris Paul",
+    "id": "101108",
+    "__typename": "Player"
+  },
+  {
+    "name": "Christian Wood",
+    "id": "1626174",
+    "__typename": "Player"
+  },
+  {
+    "name": "Chuma Okeke",
+    "id": "1629643",
+    "__typename": "Player"
+  },
+  {
+    "name": "CJ McCollum",
+    "id": "203468",
+    "__typename": "Player"
+  },
+  {
+    "name": "Clint Capela",
+    "id": "203991",
+    "__typename": "Player"
+  },
+  {
+    "name": "Coby White",
+    "id": "1629632",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cody Martin",
+    "id": "1628998",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cody Zeller",
+    "id": "203469",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cole Anthony",
+    "id": "1630175",
+    "__typename": "Player"
+  },
+  {
+    "name": "Collin Sexton",
+    "id": "1629012",
+    "__typename": "Player"
+  },
+  {
+    "name": "Corey Kispert",
+    "id": "1630557",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cory Joseph",
+    "id": "202709",
+    "__typename": "Player"
+  },
+  {
+    "name": "Courtney Vandersloot",
+    "id": "202664",
+    "__typename": "Player"
+  },
+  {
+    "name": "Courtney Williams",
+    "id": "1627675",
+    "__typename": "Player"
+  },
+  {
+    "name": "Crystal Bradford",
+    "id": "204325",
+    "__typename": "Player"
+  },
+  {
+    "name": "Crystal Dangerfield",
+    "id": "1630101",
+    "__typename": "Player"
+  },
+  {
+    "name": "Cynthia Cooper",
+    "id": "100073",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dalano Banton",
+    "id": "1630625",
+    "__typename": "Player"
+  },
+  {
+    "name": "Damian Jones",
+    "id": "1627745",
+    "__typename": "Player"
+  },
+  {
+    "name": "Damian Lillard",
+    "id": "203081",
+    "__typename": "Player"
+  },
+  {
+    "name": "Damion Lee",
+    "id": "1627814",
+    "__typename": "Player"
+  },
+  {
+    "name": "Damyean Dotson",
+    "id": "1628422",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dana Evans",
+    "id": "1630389",
+    "__typename": "Player"
+  },
+  {
+    "name": "D'Angelo Russell",
+    "id": "1626156",
+    "__typename": "Player"
+  },
+  {
+    "name": "Daniel Gafford",
+    "id": "1629655",
+    "__typename": "Player"
+  },
+  {
+    "name": "Danielle Robinson",
+    "id": "202658",
+    "__typename": "Player"
+  },
+  {
+    "name": "Daniel Theis",
+    "id": "1628464",
+    "__typename": "Player"
+  },
+  {
+    "name": "Danilo Gallinari",
+    "id": "201568",
+    "__typename": "Player"
+  },
+  {
+    "name": "Danny Granger",
+    "id": "101122",
+    "__typename": "Player"
+  },
+  {
+    "name": "Danny Green",
+    "id": "201980",
+    "__typename": "Player"
+  },
+  {
+    "name": "Danuel House Jr.",
+    "id": "1627863",
+    "__typename": "Player"
+  },
+  {
+    "name": "DaQuan Jeffries",
+    "id": "1629610",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dario Šarić",
+    "id": "203967",
+    "__typename": "Player"
+  },
+  {
+    "name": "Darius Bazley",
+    "id": "1629647",
+    "__typename": "Player"
+  },
+  {
+    "name": "Darius Garland",
+    "id": "1629636",
+    "__typename": "Player"
+  },
+  {
+    "name": "Darius Miles",
+    "id": "2032",
+    "__typename": "Player"
+  },
+  {
+    "name": "David Nwaba",
+    "id": "1628021",
+    "__typename": "Player"
+  },
+  {
+    "name": "Davion Mitchell",
+    "id": "1630558",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dāvis Bertāns",
+    "id": "202722",
+    "__typename": "Player"
+  },
+  {
+    "name": "De'Aaron Fox",
+    "id": "1628368",
+    "__typename": "Player"
+  },
+  {
+    "name": "Deandre Ayton",
+    "id": "1629028",
+    "__typename": "Player"
+  },
+  {
+    "name": "DeAndre' Bembry",
+    "id": "1627761",
+    "__typename": "Player"
+  },
+  {
+    "name": "De'Andre Hunter",
+    "id": "1629631",
+    "__typename": "Player"
+  },
+  {
+    "name": "DeAndre Jordan",
+    "id": "201599",
+    "__typename": "Player"
+  },
+  {
+    "name": "De'Anthony Melton",
+    "id": "1629001",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dean Wade",
+    "id": "1629731",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dearica Hamby",
+    "id": "204324",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dejounte Murray",
+    "id": "1627749",
+    "__typename": "Player"
+  },
+  {
+    "name": "Delon Wright",
+    "id": "1626153",
+    "__typename": "Player"
+  },
+  {
+    "name": "DeMarcus Cousins",
+    "id": "202326",
+    "__typename": "Player"
+  },
+  {
+    "name": "Demar DeRozan",
+    "id": "201942",
+    "__typename": "Player"
+  },
+  {
+    "name": "DeMar DeRozan",
+    "id": "201942",
+    "__typename": "Player"
+  },
+  {
+    "name": "Deni Avdija",
+    "id": "1630166",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dennis Schröder",
+    "id": "203471",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dennis Smith Jr.",
+    "id": "1628372",
+    "__typename": "Player"
+  },
+  {
+    "name": "Denzel Valentine",
+    "id": "1627756",
+    "__typename": "Player"
+  },
+  {
+    "name": "Deron Williams",
+    "id": "101114",
+    "__typename": "Player"
+  },
+  {
+    "name": "Derrick Favors",
+    "id": "202324",
+    "__typename": "Player"
+  },
+  {
+    "name": "Derrick Jones Jr.",
+    "id": "1627884",
+    "__typename": "Player"
+  },
+  {
+    "name": "Derrick Rose",
+    "id": "201565",
+    "__typename": "Player"
+  },
+  {
+    "name": "Derrick White",
+    "id": "1628401",
+    "__typename": "Player"
+  },
+  {
+    "name": "Desmond Bane",
+    "id": "1630217",
+    "__typename": "Player"
+  },
+  {
+    "name": "Devin Booker",
+    "id": "1626164",
+    "__typename": "Player"
+  },
+  {
+    "name": "Devin Vassell",
+    "id": "1630170",
+    "__typename": "Player"
+  },
+  {
+    "name": "Devonte' Graham",
+    "id": "1628984",
+    "__typename": "Player"
+  },
+  {
+    "name": "DeWanna Bonner",
+    "id": "201886",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dewayne Dedmon",
+    "id": "203473",
+    "__typename": "Player"
+  },
+  {
+    "name": "Diamond DeShields",
+    "id": "1628890",
+    "__typename": "Player"
+  },
+  {
+    "name": "Diana Taurasi",
+    "id": "100940",
+    "__typename": "Player"
+  },
+  {
+    "name": "DiDi Richards",
+    "id": "1630459",
+    "__typename": "Player"
+  },
+  {
+    "name": "DiJonai Carrington",
+    "id": "1630096",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dillon Brooks",
+    "id": "1628415",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dirk Nowitzki",
+    "id": "1717",
+    "__typename": "Player"
+  },
+  {
+    "name": "D.J. Augustin",
+    "id": "201571",
+    "__typename": "Player"
+  },
+  {
+    "name": "Domantas Sabonis",
+    "id": "1627734",
+    "__typename": "Player"
+  },
+  {
+    "name": "Donovan Mitchell",
+    "id": "1628378",
+    "__typename": "Player"
+  },
+  {
+    "name": "Donte DiVincenzo",
+    "id": "1628978",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dorian Finney-Smith",
+    "id": "1627827",
+    "__typename": "Player"
+  },
+  {
+    "name": "Doug McDermott",
+    "id": "203926",
+    "__typename": "Player"
+  },
+  {
+    "name": "Draymond Green",
+    "id": "203110",
+    "__typename": "Player"
+  },
+  {
+    "name": "Drew Eubanks",
+    "id": "1629234",
+    "__typename": "Player"
+  },
+  {
+    "name": "Duncan Robinson",
+    "id": "1629130",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dwayne Bacon",
+    "id": "1628407",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dwight Howard",
+    "id": "2730",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dwight Powell",
+    "id": "203939",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dwyane Wade",
+    "id": "2548",
+    "__typename": "Player"
+  },
+  {
+    "name": "Dylan Windler",
+    "id": "1629685",
+    "__typename": "Player"
+  },
+  {
+    "name": "Edmond Sumner",
+    "id": "1628410",
+    "__typename": "Player"
+  },
+  {
+    "name": "Elena Delle Donne",
+    "id": "203399",
+    "__typename": "Player"
+  },
+  {
+    "name": "Elfrid Payton",
+    "id": "203901",
+    "__typename": "Player"
+  },
+  {
+    "name": "Elton Brand",
+    "id": "1882",
+    "__typename": "Player"
+  },
+  {
+    "name": "Enes Kanter",
+    "id": "202683",
+    "__typename": "Player"
+  },
+  {
+    "name": "Erica Wheeler",
+    "id": "204365",
+    "__typename": "Player"
+  },
+  {
+    "name": "Eric Bledsoe",
+    "id": "202339",
+    "__typename": "Player"
+  },
+  {
+    "name": "Eric Gordon",
+    "id": "201569",
+    "__typename": "Player"
+  },
+  {
+    "name": "Eric Paschall",
+    "id": "1629672",
+    "__typename": "Player"
+  },
+  {
+    "name": "E'Twaun Moore",
+    "id": "202734",
+    "__typename": "Player"
+  },
+  {
+    "name": "Evan Fournier",
+    "id": "203095",
+    "__typename": "Player"
+  },
+  {
+    "name": "Evan Mobley",
+    "id": "1630596",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ezi Magbegor",
+    "id": "1629496",
+    "__typename": "Player"
+  },
+  {
+    "name": "Facundo Campazzo",
+    "id": "1630267",
+    "__typename": "Player"
+  },
+  {
+    "name": "Frank Jackson",
+    "id": "1628402",
+    "__typename": "Player"
+  },
+  {
+    "name": "Frank Kaminsky",
+    "id": "1626163",
+    "__typename": "Player"
+  },
+  {
+    "name": "Franz Wagner",
+    "id": "1630532",
+    "__typename": "Player"
+  },
+  {
+    "name": "Fred VanVleet",
+    "id": "1627832",
+    "__typename": "Player"
+  },
+  {
+    "name": "Furkan Korkmaz",
+    "id": "1627788",
+    "__typename": "Player"
+  },
+  {
+    "name": "Gabe Vincent",
+    "id": "1629216",
+    "__typename": "Player"
+  },
+  {
+    "name": "Garrett Temple",
+    "id": "202066",
+    "__typename": "Player"
+  },
+  {
+    "name": "Garrison Mathews",
+    "id": "1629726",
+    "__typename": "Player"
+  },
+  {
+    "name": "Gary Harris",
+    "id": "203914",
+    "__typename": "Player"
+  },
+  {
+    "name": "Gary Payton II",
+    "id": "1627780",
+    "__typename": "Player"
+  },
+  {
+    "name": "Gary Trent Jr.",
+    "id": "1629018",
+    "__typename": "Player"
+  },
+  {
+    "name": "George Hill",
+    "id": "201588",
+    "__typename": "Player"
+  },
+  {
+    "name": "Georges Niang",
+    "id": "1627777",
+    "__typename": "Player"
+  },
+  {
+    "name": "Gerald Wallace",
+    "id": "2222",
+    "__typename": "Player"
+  },
+  {
+    "name": "Giannis Antetokounmpo",
+    "id": "203507",
+    "__typename": "Player"
+  },
+  {
+    "name": "Glenn Robinson III",
+    "id": "203922",
+    "__typename": "Player"
+  },
+  {
+    "name": "Goga Bitadze",
+    "id": "1629048",
+    "__typename": "Player"
+  },
+  {
+    "name": "Goran Dragić",
+    "id": "201609",
+    "__typename": "Player"
+  },
+  {
+    "name": "Goran Dragić ",
+    "id": "201609",
+    "__typename": "Player"
+  },
+  {
+    "name": "Gordon Hayward",
+    "id": "202330",
+    "__typename": "Player"
+  },
+  {
+    "name": "Grant Williams",
+    "id": "1629684",
+    "__typename": "Player"
+  },
+  {
+    "name": "Grayson Allen",
+    "id": "1628960",
+    "__typename": "Player"
+  },
+  {
+    "name": "Greg Brown III",
+    "id": "1630535",
+    "__typename": "Player"
+  },
+  {
+    "name": "Hakim Warrick",
+    "id": "101124",
+    "__typename": "Player"
+  },
+  {
+    "name": "Hamidou Diallo",
+    "id": "1628977",
+    "__typename": "Player"
+  },
+  {
+    "name": "Harrison Barnes",
+    "id": "203084",
+    "__typename": "Player"
+  },
+  {
+    "name": "Harry Giles",
+    "id": "1628385",
+    "__typename": "Player"
+  },
+  {
+    "name": "Hassan Whiteside",
+    "id": "202355",
+    "__typename": "Player"
+  },
+  {
+    "name": "Herbert Jones",
+    "id": "1630529",
+    "__typename": "Player"
+  },
+  {
+    "name": "Immanuel Quickley",
+    "id": "1630193",
+    "__typename": "Player"
+  },
+  {
+    "name": "Isaac Bonga",
+    "id": "1629067",
+    "__typename": "Player"
+  },
+  {
+    "name": "Isaac Okoro",
+    "id": "1630171",
+    "__typename": "Player"
+  },
+  {
+    "name": "Isabelle Harrison",
+    "id": "204330",
+    "__typename": "Player"
+  },
+  {
+    "name": "Isaiah Hartenstein",
+    "id": "1628392",
+    "__typename": "Player"
+  },
+  {
+    "name": "Isaiah Joe",
+    "id": "1630198",
+    "__typename": "Player"
+  },
+  {
+    "name": "Isaiah Roby",
+    "id": "1629676",
+    "__typename": "Player"
+  },
+  {
+    "name": "Isaiah Stewart",
+    "id": "1630191",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ish Smith",
+    "id": "202397",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ivica Zubac",
+    "id": "1627826",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jackie Young",
+    "id": "1629498",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jaden McDaniels",
+    "id": "1630183",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jae Crowder",
+    "id": "203109",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jae'Sean Tate",
+    "id": "1630256",
+    "__typename": "Player"
+  },
+  {
+    "name": "JaKarr Sampson",
+    "id": "203960",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jake Layman",
+    "id": "1627774",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jakob Poeltl",
+    "id": "1627751",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jalen Brunson",
+    "id": "1628973",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jalen Green",
+    "id": "1630224",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jalen Johnson",
+    "id": "1630552",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jalen McDaniels",
+    "id": "1629667",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jalen Smith",
+    "id": "1630188",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jalen Suggs",
+    "id": "1630591",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jamal Murray",
+    "id": "1627750",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jameer Nelson",
+    "id": "2749",
+    "__typename": "Player"
+  },
+  {
+    "name": "James Bouknight",
+    "id": "1630547",
+    "__typename": "Player"
+  },
+  {
+    "name": "James Ennis III",
+    "id": "203516",
+    "__typename": "Player"
+  },
+  {
+    "name": "James Harden",
+    "id": "201935",
+    "__typename": "Player"
+  },
+  {
+    "name": "James Johnson",
+    "id": "201949",
+    "__typename": "Player"
+  },
+  {
+    "name": "James Wiseman",
+    "id": "1630164",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ja Morant",
+    "id": "1629630",
+    "__typename": "Player"
+  },
+  {
+    "name": "JaMychal Green",
+    "id": "203210",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jared Jeffries",
+    "id": "2407",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jaren Jackson Jr.",
+    "id": "1628991",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jarred Vanderbilt",
+    "id": "1629020",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jarrell Brantley",
+    "id": "1629714",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jarrett Allen",
+    "id": "1628386",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jarrett Culver",
+    "id": "1629633",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jarrett Jack",
+    "id": "101127",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jasmine Thomas",
+    "id": "202662",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jason Kidd",
+    "id": "467",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jason Richardson",
+    "id": "2202",
+    "__typename": "Player"
+  },
+  {
+    "name": "JaVale McGee",
+    "id": "201580",
+    "__typename": "Player"
+  },
+  {
+    "name": "Javonte Green",
+    "id": "1629750",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jaxson Hayes",
+    "id": "1629637",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jaylen Brown",
+    "id": "1627759",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jaylen Nowell",
+    "id": "1629669",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jayson Tatum",
+    "id": "1628369",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jeff Green",
+    "id": "201145",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jeff Hornacek",
+    "id": "204",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jeff Teague",
+    "id": "201952",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jerami Grant",
+    "id": "203924",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jeremiah Robinson-Earl",
+    "id": "1630526",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jeremy Lamb",
+    "id": "203087",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jermaine O'Neal",
+    "id": "979",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jerry Stackhouse",
+    "id": "711",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jevon Carter",
+    "id": "1628975",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jewell Loyd",
+    "id": "204319",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jimmy Butler",
+    "id": "202710",
+    "__typename": "Player"
+  },
+  {
+    "name": "JJ Redick",
+    "id": "200755",
+    "__typename": "Player"
+  },
+  {
+    "name": "Joe Harris",
+    "id": "203925",
+    "__typename": "Player"
+  },
+  {
+    "name": "Joe Ingles",
+    "id": "204060",
+    "__typename": "Player"
+  },
+  {
+    "name": "Joel Embiid",
+    "id": "203954",
+    "__typename": "Player"
+  },
+  {
+    "name": "John Collins",
+    "id": "1628381",
+    "__typename": "Player"
+  },
+  {
+    "name": "John Konchar",
+    "id": "1629723",
+    "__typename": "Player"
+  },
+  {
+    "name": "John Wall",
+    "id": "202322",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jonas Valančiūnas",
+    "id": "202685",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jonathan Kuminga",
+    "id": "1630228",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jonquel Jones",
+    "id": "1627673",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jordan Clarkson",
+    "id": "203903",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jordan McLaughlin",
+    "id": "1629162",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jordan Nwora",
+    "id": "1629670",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jordan Poole",
+    "id": "1629673",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jordin Canada",
+    "id": "1628886",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jose Alvarado",
+    "id": "1630631",
+    "__typename": "Player"
+  },
+  {
+    "name": "Josh Christopher",
+    "id": "1630528",
+    "__typename": "Player"
+  },
+  {
+    "name": "Josh Giddey",
+    "id": "1630581",
+    "__typename": "Player"
+  },
+  {
+    "name": "Josh Green",
+    "id": "1630182",
+    "__typename": "Player"
+  },
+  {
+    "name": "Josh Hart",
+    "id": "1628404",
+    "__typename": "Player"
+  },
+  {
+    "name": "Josh Jackson",
+    "id": "1628367",
+    "__typename": "Player"
+  },
+  {
+    "name": "Josh Okogie",
+    "id": "1629006",
+    "__typename": "Player"
+  },
+  {
+    "name": "Josh Richardson",
+    "id": "1626196",
+    "__typename": "Player"
+  },
+  {
+    "name": "Josh Smith",
+    "id": "2746",
+    "__typename": "Player"
+  },
+  {
+    "name": "Joshua Primo",
+    "id": "1630563",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jrue Holiday",
+    "id": "201950",
+    "__typename": "Player"
+  },
+  {
+    "name": "JT Thor",
+    "id": "1630550",
+    "__typename": "Player"
+  },
+  {
+    "name": "Juancho Hernangómez",
+    "id": "1627823",
+    "__typename": "Player"
+  },
+  {
+    "name": "Juan Toscano-Anderson",
+    "id": "1629308",
+    "__typename": "Player"
+  },
+  {
+    "name": "Julius Randle",
+    "id": "203944",
+    "__typename": "Player"
+  },
+  {
+    "name": "Justin Holiday",
+    "id": "203200",
+    "__typename": "Player"
+  },
+  {
+    "name": "Justise Winslow",
+    "id": "1626159",
+    "__typename": "Player"
+  },
+  {
+    "name": "Jusuf Nurkić",
+    "id": "203994",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kahleah Copper",
+    "id": "1627674",
+    "__typename": "Player"
+  },
+  {
+    "name": "Karl-Anthony Towns",
+    "id": "1626157",
+    "__typename": "Player"
+  },
+  {
+    "name": "Katie Lou Samuelson",
+    "id": "1629478",
+    "__typename": "Player"
+  },
+  {
+    "name": "Katie Smith",
+    "id": "100404",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kawhi Leonard",
+    "id": "202695",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kayla McBride",
+    "id": "203825",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kelan Martin",
+    "id": "1629103",
+    "__typename": "Player"
+  },
+  {
+    "name": "Keldon Johnson",
+    "id": "1629640",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kelly Olynyk",
+    "id": "203482",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kelly Oubre Jr.",
+    "id": "1626162",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kelsey Mitchell",
+    "id": "1628909",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kelsey Plum",
+    "id": "1628276",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kemba Walker",
+    "id": "202689",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kendrick Nunn",
+    "id": "1629134",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kenrich Williams",
+    "id": "1629026",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kentavious Caldwell-Pope",
+    "id": "203484",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kent Bazemore",
+    "id": "203145",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kenyon Martin",
+    "id": "2030",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kenyon Martin Jr.",
+    "id": "1630231",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kevin Durant",
+    "id": "201142",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kevin Garnett",
+    "id": "708",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kevin Huerter",
+    "id": "1628989",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kevin Knox",
+    "id": "1628995",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kevin Love",
+    "id": "201567",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kevin Martin",
+    "id": "2755",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kevin Porter Jr.",
+    "id": "1629645",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kevon Looney",
+    "id": "1626172",
+    "__typename": "Player"
+  },
+  {
+    "name": "Khem Birch",
+    "id": "203920",
+    "__typename": "Player"
+  },
+  {
+    "name": "Khris Middleton",
+    "id": "203114",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kia Nurse",
+    "id": "1628915",
+    "__typename": "Player"
+  },
+  {
+    "name": "Killian Hayes",
+    "id": "1630165",
+    "__typename": "Player"
+  },
+  {
+    "name": "Killian Tillie",
+    "id": "1629681",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kira Lewis Jr.",
+    "id": "1630184",
+    "__typename": "Player"
+  },
+  {
+    "name": "Klay Thompson",
+    "id": "202691",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kristaps Porziņģis",
+    "id": "204001",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kristi Toliver",
+    "id": "201911",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ky Bowman",
+    "id": "1629065",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kyle Anderson",
+    "id": "203937",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kyle Korver",
+    "id": "2594",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kyle Kuzma",
+    "id": "1628398",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kyle Lowry",
+    "id": "200768",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kyrie Irving",
+    "id": "202681",
+    "__typename": "Player"
+  },
+  {
+    "name": "Kysre Gondrezick",
+    "id": "1630438",
+    "__typename": "Player"
+  },
+  {
+    "name": "KZ Okpala",
+    "id": "1629644",
+    "__typename": "Player"
+  },
+  {
+    "name": "LaMarcus Aldridge",
+    "id": "200746",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lamar Odom",
+    "id": "1885",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lamar Stevens",
+    "id": "1630205",
+    "__typename": "Player"
+  },
+  {
+    "name": "LaMelo Ball",
+    "id": "1630163",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lance Stephenson",
+    "id": "202362",
+    "__typename": "Player"
+  },
+  {
+    "name": "Landry Shamet",
+    "id": "1629013",
+    "__typename": "Player"
+  },
+  {
+    "name": "Langston Galloway",
+    "id": "204038",
+    "__typename": "Player"
+  },
+  {
+    "name": "Larry Nance Jr.",
+    "id": "1626204",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lauren Jackson",
+    "id": "100682",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lauri Markkanen",
+    "id": "1628374",
+    "__typename": "Player"
+  },
+  {
+    "name": "Layshia Clarendon",
+    "id": "203406",
+    "__typename": "Player"
+  },
+  {
+    "name": "Leandro Barbosa",
+    "id": "2571",
+    "__typename": "Player"
+  },
+  {
+    "name": "LeBron James",
+    "id": "2544",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lindsay Whalen",
+    "id": "100915",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lisa Leslie",
+    "id": "100003",
+    "__typename": "Player"
+  },
+  {
+    "name": "Liz Cambage",
+    "id": "202633",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lonnie Walker",
+    "id": "1629022",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lonnie Walker IV",
+    "id": "1629022",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lonzo Ball",
+    "id": "1628366",
+    "__typename": "Player"
+  },
+  {
+    "name": "Lou Williams",
+    "id": "101150",
+    "__typename": "Player"
+  },
+  {
+    "name": "Luguentz Dort",
+    "id": "1629652",
+    "__typename": "Player"
+  },
+  {
+    "name": "Luka Dončić",
+    "id": "1629029",
+    "__typename": "Player"
+  },
+  {
+    "name": "Luke Kennard",
+    "id": "1628379",
+    "__typename": "Player"
+  },
+  {
+    "name": "Luke Kornet",
+    "id": "1628436",
+    "__typename": "Player"
+  },
+  {
+    "name": "Luke Ridnour",
+    "id": "2557",
+    "__typename": "Player"
+  },
+  {
+    "name": "Luke Walton",
+    "id": "2575",
+    "__typename": "Player"
+  },
+  {
+    "name": "Malachi Flynn",
+    "id": "1630201",
+    "__typename": "Player"
+  },
+  {
+    "name": "Malcolm Brogdon",
+    "id": "1627763",
+    "__typename": "Player"
+  },
+  {
+    "name": "Malik Beasley",
+    "id": "1627736",
+    "__typename": "Player"
+  },
+  {
+    "name": "Malik Monk",
+    "id": "1628370",
+    "__typename": "Player"
+  },
+  {
+    "name": "Manu Ginobili",
+    "id": "1938",
+    "__typename": "Player"
+  },
+  {
+    "name": "Manu Ginóbili",
+    "id": "1938",
+    "__typename": "Player"
+  },
+  {
+    "name": "Marc Gasol",
+    "id": "201188",
+    "__typename": "Player"
+  },
+  {
+    "name": "Marcus Camby",
+    "id": "948",
+    "__typename": "Player"
+  },
+  {
+    "name": "Marcus Morris",
+    "id": "202694",
+    "__typename": "Player"
+  },
+  {
+    "name": "Marcus Morris Sr.",
+    "id": "202694",
+    "__typename": "Player"
+  },
+  {
+    "name": "Marcus Smart",
+    "id": "203935",
+    "__typename": "Player"
+  },
+  {
+    "name": "Marina Mabrey",
+    "id": "1629497",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mario Chalmers",
+    "id": "201596",
+    "__typename": "Player"
+  },
+  {
+    "name": "Markelle Fultz",
+    "id": "1628365",
+    "__typename": "Player"
+  },
+  {
+    "name": "Markieff Morris",
+    "id": "202693",
+    "__typename": "Player"
+  },
+  {
+    "name": "Marquese Chriss",
+    "id": "1627737",
+    "__typename": "Player"
+  },
+  {
+    "name": "Marvin Bagley III",
+    "id": "1628963",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mason Jones",
+    "id": "1630222",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mason Plumlee",
+    "id": "203486",
+    "__typename": "Player"
+  },
+  {
+    "name": "Matisse Thybulle",
+    "id": "1629680",
+    "__typename": "Player"
+  },
+  {
+    "name": "Maurice Harkless",
+    "id": "203090",
+    "__typename": "Player"
+  },
+  {
+    "name": "Maxi Kleber",
+    "id": "1628467",
+    "__typename": "Player"
+  },
+  {
+    "name": "Max Strus",
+    "id": "1629622",
+    "__typename": "Player"
+  },
+  {
+    "name": "Maya Moore",
+    "id": "202632",
+    "__typename": "Player"
+  },
+  {
+    "name": "Michaela Onyenwere",
+    "id": "1630446",
+    "__typename": "Player"
+  },
+  {
+    "name": "Michael Carter-Williams",
+    "id": "203487",
+    "__typename": "Player"
+  },
+  {
+    "name": "Michael Finley",
+    "id": "714",
+    "__typename": "Player"
+  },
+  {
+    "name": "Michael Porter Jr.",
+    "id": "1629008",
+    "__typename": "Player"
+  },
+  {
+    "name": "Michael Redd",
+    "id": "2072",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mikal Bridges",
+    "id": "1628969",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mike Bibby",
+    "id": "1710",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mike Conley",
+    "id": "201144",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mike James",
+    "id": "1628455",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mike Muscala",
+    "id": "203488",
+    "__typename": "Player"
+  },
+  {
+    "name": "Miles Bridges",
+    "id": "1628970",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mitchell Robinson",
+    "id": "1629011",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mo Bamba",
+    "id": "1628964",
+    "__typename": "Player"
+  },
+  {
+    "name": "Monique Billings",
+    "id": "1628881",
+    "__typename": "Player"
+  },
+  {
+    "name": "Monte Morris",
+    "id": "1628420",
+    "__typename": "Player"
+  },
+  {
+    "name": "Montrezl Harrell",
+    "id": "1626149",
+    "__typename": "Player"
+  },
+  {
+    "name": "Moritz Wagner",
+    "id": "1629021",
+    "__typename": "Player"
+  },
+  {
+    "name": "Morris Peterson",
+    "id": "2050",
+    "__typename": "Player"
+  },
+  {
+    "name": "Moses Brown",
+    "id": "1629650",
+    "__typename": "Player"
+  },
+  {
+    "name": "Moses Moody",
+    "id": "1630541",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mo Williams",
+    "id": "2590",
+    "__typename": "Player"
+  },
+  {
+    "name": "Mychal Mulder",
+    "id": "1628539",
+    "__typename": "Player"
+  },
+  {
+    "name": "Myisha Hines-Allen",
+    "id": "1628899",
+    "__typename": "Player"
+  },
+  {
+    "name": "Myles Turner",
+    "id": "1626167",
+    "__typename": "Player"
+  },
+  {
+    "name": "Naji Marshall",
+    "id": "1630230",
+    "__typename": "Player"
+  },
+  {
+    "name": "Napheesa Collier",
+    "id": "1629483",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nassir Little",
+    "id": "1629642",
+    "__typename": "Player"
+  },
+  {
+    "name": "Natasha Cloud",
+    "id": "204333",
+    "__typename": "Player"
+  },
+  {
+    "name": "Natasha Howard",
+    "id": "203827",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nate Robinson",
+    "id": "101126",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nathan Knight",
+    "id": "1630233",
+    "__typename": "Player"
+  },
+  {
+    "name": "Naz Reid",
+    "id": "1629675",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nemanja Bjelica",
+    "id": "202357",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nerlens Noel",
+    "id": "203457",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nick Collison",
+    "id": "2555",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nickeil Alexander-Walker",
+    "id": "1629638",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nicolas Batum",
+    "id": "201587",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nicolas Claxton",
+    "id": "1629651",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nico Mannion",
+    "id": "1630185",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nikola Jokić",
+    "id": "203999",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nikola Vučević",
+    "id": "202696",
+    "__typename": "Player"
+  },
+  {
+    "name": "Nneka Ogwumike",
+    "id": "203014",
+    "__typename": "Player"
+  },
+  {
+    "name": "Norman Powell",
+    "id": "1626181",
+    "__typename": "Player"
+  },
+  {
+    "name": "Obi Toppin",
+    "id": "1630167",
+    "__typename": "Player"
+  },
+  {
+    "name": "Odyssey Sims",
+    "id": "203824",
+    "__typename": "Player"
+  },
+  {
+    "name": "Og Anunoby",
+    "id": "1628384",
+    "__typename": "Player"
+  },
+  {
+    "name": "OG Anunoby",
+    "id": "1628384",
+    "__typename": "Player"
+  },
+  {
+    "name": "Omer Yurtseven",
+    "id": "1630209",
+    "__typename": "Player"
+  },
+  {
+    "name": "Onyeka Okongwu",
+    "id": "1630168",
+    "__typename": "Player"
+  },
+  {
+    "name": "Oshae Brissett",
+    "id": "1629052",
+    "__typename": "Player"
+  },
+  {
+    "name": "Otto Porter Jr.",
+    "id": "203490",
+    "__typename": "Player"
+  },
+  {
+    "name": "Pascal Siakam",
+    "id": "1627783",
+    "__typename": "Player"
+  },
+  {
+    "name": "Pat Connaughton",
+    "id": "1626192",
+    "__typename": "Player"
+  },
+  {
+    "name": "Patrick Beverley",
+    "id": "201976",
+    "__typename": "Player"
+  },
+  {
+    "name": "Patrick Williams",
+    "id": "1630172",
+    "__typename": "Player"
+  },
+  {
+    "name": "Patty Mills",
+    "id": "201988",
+    "__typename": "Player"
+  },
+  {
+    "name": "Paul George",
+    "id": "202331",
+    "__typename": "Player"
+  },
+  {
+    "name": "Paul Millsap",
+    "id": "200794",
+    "__typename": "Player"
+  },
+  {
+    "name": "Paul Pierce",
+    "id": "1718",
+    "__typename": "Player"
+  },
+  {
+    "name": "Paul Reed",
+    "id": "1630194",
+    "__typename": "Player"
+  },
+  {
+    "name": "Payton Pritchard",
+    "id": "1630202",
+    "__typename": "Player"
+  },
+  {
+    "name": "PJ Dozier",
+    "id": "1628408",
+    "__typename": "Player"
+  },
+  {
+    "name": "P.J. Tucker",
+    "id": "200782",
+    "__typename": "Player"
+  },
+  {
+    "name": "P.J. Washington",
+    "id": "1629023",
+    "__typename": "Player"
+  },
+  {
+    "name": "Precious Achiuwa",
+    "id": "1630173",
+    "__typename": "Player"
+  },
+  {
+    "name": "Quentin Grimes",
+    "id": "1629656",
+    "__typename": "Player"
+  },
+  {
+    "name": "Quentin Richardson",
+    "id": "2047",
+    "__typename": "Player"
+  },
+  {
+    "name": "Rajon Rondo",
+    "id": "200765",
+    "__typename": "Player"
+  },
+  {
+    "name": "Rashard Lewis",
+    "id": "1740",
+    "__typename": "Player"
+  },
+  {
+    "name": "Raul Neto",
+    "id": "203526",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ray Allen",
+    "id": "951",
+    "__typename": "Player"
+  },
+  {
+    "name": "Reggie Bullock",
+    "id": "203493",
+    "__typename": "Player"
+  },
+  {
+    "name": "Reggie Jackson",
+    "id": "202704",
+    "__typename": "Player"
+  },
+  {
+    "name": "Reggie Perry",
+    "id": "1629617",
+    "__typename": "Player"
+  },
+  {
+    "name": "Richard Hamilton",
+    "id": "1888",
+    "__typename": "Player"
+  },
+  {
+    "name": "Richard Jefferson",
+    "id": "2210",
+    "__typename": "Player"
+  },
+  {
+    "name": "Richaun Holmes",
+    "id": "1626158",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ricky Rubio",
+    "id": "201937",
+    "__typename": "Player"
+  },
+  {
+    "name": "RJ Barrett",
+    "id": "1629628",
+    "__typename": "Player"
+  },
+  {
+    "name": "R.J. Hampton",
+    "id": "1630181",
+    "__typename": "Player"
+  },
+  {
+    "name": "Robert Covington",
+    "id": "203496",
+    "__typename": "Player"
+  },
+  {
+    "name": "Robert Horry",
+    "id": "109",
+    "__typename": "Player"
+  },
+  {
+    "name": "Robert Williams III",
+    "id": "1629057",
+    "__typename": "Player"
+  },
+  {
+    "name": "Robin Lopez",
+    "id": "201577",
+    "__typename": "Player"
+  },
+  {
+    "name": "Royce O'Neale",
+    "id": "1626220",
+    "__typename": "Player"
+  },
+  {
+    "name": "Roy Hibbert",
+    "id": "201579",
+    "__typename": "Player"
+  },
+  {
+    "name": "Rudy Gay",
+    "id": "200752",
+    "__typename": "Player"
+  },
+  {
+    "name": "Rudy Gobert",
+    "id": "203497",
+    "__typename": "Player"
+  },
+  {
+    "name": "Rui Hachimura",
+    "id": "1629060",
+    "__typename": "Player"
+  },
+  {
+    "name": "Russell Westbrook",
+    "id": "201566",
+    "__typename": "Player"
+  },
+  {
+    "name": "Saben Lee",
+    "id": "1630240",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sabrina Ionescu",
+    "id": "1629477",
+    "__typename": "Player"
+  },
+  {
+    "name": "Saddiq Bey",
+    "id": "1630180",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sami Whitcomb",
+    "id": "1628244",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sam Merrill",
+    "id": "1630241",
+    "__typename": "Player"
+  },
+  {
+    "name": "Santi Aldama",
+    "id": "1630583",
+    "__typename": "Player"
+  },
+  {
+    "name": "Satou Sabally",
+    "id": "1630149",
+    "__typename": "Player"
+  },
+  {
+    "name": "Scottie Barnes",
+    "id": "1630567",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sean McDermott",
+    "id": "1630253",
+    "__typename": "Player"
+  },
+  {
+    "name": "Seimone Augustus",
+    "id": "200671",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sekou Doumbouya",
+    "id": "1629635",
+    "__typename": "Player"
+  },
+  {
+    "name": "Semi Ojeleye",
+    "id": "1628400",
+    "__typename": "Player"
+  },
+  {
+    "name": "Serge Ibaka",
+    "id": "201586",
+    "__typename": "Player"
+  },
+  {
+    "name": "Seth Curry",
+    "id": "203552",
+    "__typename": "Player"
+  },
+  {
+    "name": "Shabazz Napier",
+    "id": "203894",
+    "__typename": "Player"
+  },
+  {
+    "name": "Shai Gilgeous-Alexander",
+    "id": "1628983",
+    "__typename": "Player"
+  },
+  {
+    "name": "Shake Milton",
+    "id": "1629003",
+    "__typename": "Player"
+  },
+  {
+    "name": "Shane Battier",
+    "id": "2203",
+    "__typename": "Player"
+  },
+  {
+    "name": "Shaquille O'Neal",
+    "id": "406",
+    "__typename": "Player"
+  },
+  {
+    "name": "Shawn Marion",
+    "id": "1890",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sheryl Swoopes",
+    "id": "100072",
+    "__typename": "Player"
+  },
+  {
+    "name": "Skylar Diggins-Smith",
+    "id": "203400",
+    "__typename": "Player"
+  },
+  {
+    "name": "Skylar Mays",
+    "id": "1630219",
+    "__typename": "Player"
+  },
+  {
+    "name": "Smush Parker",
+    "id": "2470",
+    "__typename": "Player"
+  },
+  {
+    "name": "Solomon Hill",
+    "id": "203524",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sophie Cunningham",
+    "id": "1629482",
+    "__typename": "Player"
+  },
+  {
+    "name": "Spencer Dinwiddie",
+    "id": "203915",
+    "__typename": "Player"
+  },
+  {
+    "name": "Stanley Johnson",
+    "id": "1626169",
+    "__typename": "Player"
+  },
+  {
+    "name": "Steph Curry",
+    "id": "201939",
+    "__typename": "Player"
+  },
+  {
+    "name": "Stephon Marbury",
+    "id": "950",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sterling Brown",
+    "id": "1628425",
+    "__typename": "Player"
+  },
+  {
+    "name": "Steve Francis",
+    "id": "1883",
+    "__typename": "Player"
+  },
+  {
+    "name": "Steven Adams",
+    "id": "203500",
+    "__typename": "Player"
+  },
+  {
+    "name": "Steve Nash",
+    "id": "959",
+    "__typename": "Player"
+  },
+  {
+    "name": "Stromile Swift",
+    "id": "2031",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sue Bird",
+    "id": "100720",
+    "__typename": "Player"
+  },
+  {
+    "name": "Svi Mykhailiuk",
+    "id": "1629004",
+    "__typename": "Player"
+  },
+  {
+    "name": "Swin Cash",
+    "id": "100721",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sydney Wiese",
+    "id": "1628282",
+    "__typename": "Player"
+  },
+  {
+    "name": "Sylvia Fowles",
+    "id": "201480",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tacko Fall",
+    "id": "1629605",
+    "__typename": "Player"
+  },
+  {
+    "name": "Taj Gibson",
+    "id": "201959",
+    "__typename": "Player"
+  },
+  {
+    "name": "Talen Horton-Tucker",
+    "id": "1629659",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tamika Catchings",
+    "id": "100646",
+    "__typename": "Player"
+  },
+  {
+    "name": "Taurean Prince",
+    "id": "1627752",
+    "__typename": "Player"
+  },
+  {
+    "name": "Te'a Cooper",
+    "id": "1630099",
+    "__typename": "Player"
+  },
+  {
+    "name": "Teaira McCowan",
+    "id": "1629479",
+    "__typename": "Player"
+  },
+  {
+    "name": "Terance Mann",
+    "id": "1629611",
+    "__typename": "Player"
+  },
+  {
+    "name": "Terence Davis",
+    "id": "1629056",
+    "__typename": "Player"
+  },
+  {
+    "name": "Teresa Weatherspoon",
+    "id": "100101",
+    "__typename": "Player"
+  },
+  {
+    "name": "Terrence Ross",
+    "id": "203082",
+    "__typename": "Player"
+  },
+  {
+    "name": "Terry Rozier",
+    "id": "1626179",
+    "__typename": "Player"
+  },
+  {
+    "name": "Thaddeus Young",
+    "id": "201152",
+    "__typename": "Player"
+  },
+  {
+    "name": "Thanasis Antetokounmpo",
+    "id": "203648",
+    "__typename": "Player"
+  },
+  {
+    "name": "Théo Maledon",
+    "id": "1630177",
+    "__typename": "Player"
+  },
+  {
+    "name": "Thomas Bryant",
+    "id": "1628418",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ticha Penicheiro",
+    "id": "100234",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tiffany Hayes",
+    "id": "203026",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tiffany Mitchell",
+    "id": "1627676",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tim Duncan",
+    "id": "1495",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tim Hardaway Jr.",
+    "id": "203501",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tina Charles",
+    "id": "202250",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tina Thompson",
+    "id": "100076",
+    "__typename": "Player"
+  },
+  {
+    "name": "T.J. McConnell",
+    "id": "204456",
+    "__typename": "Player"
+  },
+  {
+    "name": "T.J. Warren",
+    "id": "203933",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tobias Harris",
+    "id": "202699",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tomáš Satoranský",
+    "id": "203107",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tony Parker",
+    "id": "2225",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tony Snell",
+    "id": "203503",
+    "__typename": "Player"
+  },
+  {
+    "name": "Torrey Craig",
+    "id": "1628470",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tracy McGrady",
+    "id": "1503",
+    "__typename": "Player"
+  },
+  {
+    "name": "Trae Young",
+    "id": "1629027",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tre Jones",
+    "id": "1630200",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tre Mann",
+    "id": "1630544",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tremont Waters",
+    "id": "1629682",
+    "__typename": "Player"
+  },
+  {
+    "name": "Trevor Ariza",
+    "id": "2772",
+    "__typename": "Player"
+  },
+  {
+    "name": "Trey Burke",
+    "id": "203504",
+    "__typename": "Player"
+  },
+  {
+    "name": "Trey Lyles",
+    "id": "1626168",
+    "__typename": "Player"
+  },
+  {
+    "name": "Trey Murphy III",
+    "id": "1630530",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tristan Thompson",
+    "id": "202684",
+    "__typename": "Player"
+  },
+  {
+    "name": "Troy Brown Jr.",
+    "id": "1628972",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ty Jerome",
+    "id": "1629660",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tyler Herro",
+    "id": "1629639",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tyrese Haliburton",
+    "id": "1630169",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tyrese Maxey",
+    "id": "1630178",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tyson Chandler",
+    "id": "2199",
+    "__typename": "Player"
+  },
+  {
+    "name": "Tyus Jones",
+    "id": "1626145",
+    "__typename": "Player"
+  },
+  {
+    "name": "Udoka Azubuike",
+    "id": "1628962",
+    "__typename": "Player"
+  },
+  {
+    "name": "Udonis Haslem",
+    "id": "2617",
+    "__typename": "Player"
+  },
+  {
+    "name": "Usman Garuba",
+    "id": "1630586",
+    "__typename": "Player"
+  },
+  {
+    "name": "Victor Oladipo",
+    "id": "203506",
+    "__typename": "Player"
+  },
+  {
+    "name": "Vince Carter",
+    "id": "1713",
+    "__typename": "Player"
+  },
+  {
+    "name": "Wally Szczerbiak",
+    "id": "1887",
+    "__typename": "Player"
+  },
+  {
+    "name": "Wendell Carter Jr.",
+    "id": "1628976",
+    "__typename": "Player"
+  },
+  {
+    "name": "Will Barton",
+    "id": "203115",
+    "__typename": "Player"
+  },
+  {
+    "name": "Willie Cauley-Stein",
+    "id": "1626161",
+    "__typename": "Player"
+  },
+  {
+    "name": "Xavier Tillman",
+    "id": "1630214",
+    "__typename": "Player"
+  },
+  {
+    "name": "Yolanda Griffith",
+    "id": "100419",
+    "__typename": "Player"
+  },
+  {
+    "name": "Yuta Watanabe",
+    "id": "1629139",
+    "__typename": "Player"
+  },
+  {
+    "name": "Zach LaVine",
+    "id": "203897",
+    "__typename": "Player"
+  },
+  {
+    "name": "Zach Randolph",
+    "id": "2216",
+    "__typename": "Player"
+  },
+  {
+    "name": "Zeke Nnaji",
+    "id": "1630192",
+    "__typename": "Player"
+  },
+  {
+    "name": "Ziaire Williams",
+    "id": "1630533",
+    "__typename": "Player"
+  },
+  {
+    "name": "Zion Williamson",
+    "id": "1629627",
+    "__typename": "Player"
+  }
      ],
      "__typename":"Players"
   },
@@ -1712,232 +3202,568 @@
      "__typename":"Teams"
   },
   "allSets":{
-
        "data":[
           {
-             "id":"708a6f60-5c93-406e-854f-50dd6734c0dd",
-             "flowName":"Holo Icon",
-             "setVisualId":"SET_VISUAL_LEGENDARY",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          },
-          {
-             "id":"0a528e81-5bb0-4bf8-a7f9-6dbd183528ce",
-             "flowName":"The Gift",
-             "setVisualId":"SET_VISUAL_COMMON",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          },
-          {
-             "id":"737f9997-8817-4a74-9c13-88b99c37d118",
-             "flowName":"Season Tip-off",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          },
-          {
-             "id":"28eddc41-6a11-4ff8-8ec6-15041aa01e80",
-             "flowName":"Early Adopters",
-             "setVisualId":"SET_VISUAL_COMMON",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"c561f66b-5bd8-451c-8686-156073c3fb69",
-             "flowName":"Cosmic",
-             "setVisualId":"SET_VISUAL_LEGENDARY",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"122b048d-585e-4c63-8275-c23949576fd6",
-             "flowName":"Seeing Stars",
-             "setVisualId":"SET_VISUAL_COMMON",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          },
-          {
-             "id":"f493db4a-a775-4d6e-be8a-56fae509a92d",
-             "flowName":"Rising Stars",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          },
-          {
-             "id":"a3a4f935-4d05-4166-b8c4-ce8e52eb3ca3",
-             "flowName":"Hometown Showdown: Cali vs. NY",
-             "setVisualId":"SET_VISUAL_COMMON",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"7b797690-5b53-45a7-b972-bd2d5152654a",
-             "flowName":"Base Set",
-             "setVisualId":"SET_VISUAL_COMMON",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"12a8288a-addc-4e5c-8af7-b3ba6e5161d4",
-             "flowName":"Metallic Gold LE",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"a494c64e-9e93-418c-8934-f331ee47a39b",
-             "flowName":"From the Top",
-             "setVisualId":"SET_VISUAL_LEGENDARY",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"feead270-621c-4cde-baac-2f6834e9e594",
-             "flowName":"Conference Semifinals",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"d2378dc1-1168-410b-893d-e084170a402e",
-             "flowName":"First Round",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"a156f083-e902-49d3-a113-bd61702c336a",
-             "flowName":"Denied!",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"d4712d31-9030-40de-b1a6-1fb9964348f3",
-             "flowName":"Western Conference Finals",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"5f85e04f-798f-434c-89d4-2b0a575bd652",
-             "flowName":"So Fresh",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"252e83ac-b3a4-407e-82d2-138beb60b5b9",
-             "flowName":"For the Win",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"9c8202c7-698b-4f44-b029-b70ddc49e9dc",
-             "flowName":"Eastern Conference Finals",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"dd7c595c-5a1b-4f43-8493-db0a2bbcc5aa",
-             "flowName":"Got Game",
-             "setVisualId":"SET_VISUAL_COMMON",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"3a0ae6ce-f22e-4d98-b1fe-906f859df983",
-             "flowName":"Lace 'Em Up",
-             "setVisualId":"SET_VISUAL_LEGENDARY",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"4e166b27-3099-44c3-9de3-cac2b9751692",
-             "flowName":"With the Strip",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"18b2d80e-d38d-4678-9b7f-c2bfb223259e",
-             "flowName":"Rookie Debut",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"2dbc545a-25a5-4208-8e89-bbb6c3e3a364",
-             "flowName":"Throwdowns",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"2ab08547-9f62-4ff4-aff9-1bdc0de8fa3e",
-             "flowName":"The Finals",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"320cae53-d585-4e74-8a66-404fa3543c19",
-             "flowName":"2020 NBA Finals",
-             "setVisualId":"SET_VISUAL_LEGENDARY",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"814c5183-596f-41d7-9135-c6b29faa9c6d",
-             "flowName":"Holo MMXX",
-             "setVisualId":"SET_VISUAL_LEGENDARY",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"b73fe6f1-ae28-468b-a4b3-4adb68e7d6bc",
-             "flowName":"MVP Moves",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"827f9328-03aa-4cb5-97cd-7b5f2c2386fd",
-             "flowName":"Run It Back",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":1,
-             "__typename":"Set"
-          },
-          {
-             "id":"208ae30a-a4fe-42d4-9e51-e6fd1ad2a7a9",
-             "flowName":"Base Set",
-             "setVisualId":"SET_VISUAL_COMMON",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          },
-          {
-             "id":"33a4a3a3-a32c-4925-a4e8-7d24e56b105e",
-             "flowName":"Metallic Gold LE",
-             "setVisualId":"SET_VISUAL_RARE",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          },
-          {
-             "id":"54bc2e0d-91e9-4f4c-9361-a8d7eeefe91e",
-             "flowName":"Deck the Hoops",
-             "setVisualId":"SET_VISUAL_LEGENDARY",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          },
-          {
-             "id":"ad8e85a4-2240-4604-95f6-be826966d988",
-             "flowName":"Cool Cats",
-             "setVisualId":"SET_VISUAL_COMMON",
-             "flowSeriesNumber":2,
-             "__typename":"Set"
-          }
+				"id": "708a6f60-5c93-406e-854f-50dd6734c0dd",
+				"flowName": "Holo Icon",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "6783b9d8-44c5-49c7-87e0-be217af963e9",
+				"flowName": "2021 NBA Playoffs",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "496d52b8-8d6c-4071-8672-d18551f86a3e",
+				"flowName": "Hustle and Show",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "757f23fd-f7ae-465c-a006-f09dcfd5dbd5",
+				"flowName": "Throwdowns",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "7605f9c5-c9cb-47f4-8e8f-0c2751bee194",
+				"flowName": "And Then There Were Four",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "d3bc322c-f30b-482a-80d7-67ea45deebca",
+				"flowName": "2021 NBA Finals",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "d555de31-130c-4682-be6b-62c9575418e0",
+				"flowName": "Fresh Threads",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "cbf23da5-c5ad-44bb-b307-9f1ea0163d32",
+				"flowName": "WNBA Run It Back",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 3,
+				"leagues": [
+				  "WNBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "9e89b552-0236-4ffc-ab6b-8cf7c27d46b4",
+				"flowName": "Archive Set",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 3,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "902b6c87-0e91-4768-a660-195fc0173f14",
+				"flowName": "In Her Bag",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 3,
+				"leagues": [
+				  "WNBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "78e6e101-ef35-498a-96a1-b6fa87be375c",
+				"flowName": "Hustle and Show",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "d1289e27-b683-4cf3-9592-89adf93e6bcb",
+				"flowName": "Metallic Gold LE",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "e769f4b4-b469-45be-b777-0f9e24d548e2",
+				"flowName": "Metallic Silver FE",
+				"setVisualId": "SET_VISUAL_FANDOM",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "122b048d-585e-4c63-8275-c23949576fd6",
+				"flowName": "Seeing Stars",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "0376c036-dab9-4379-a73f-bb86bfa64949",
+				"flowName": "Game Recognize Game",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "08f6dd13-c2d9-4a74-85c9-3667e37a5749",
+				"flowName": "Rising Stars",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "f493db4a-a775-4d6e-be8a-56fae509a92d",
+				"flowName": "Rising Stars",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "0a528e81-5bb0-4bf8-a7f9-6dbd183528ce",
+				"flowName": "The Gift",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "737f9997-8817-4a74-9c13-88b99c37d118",
+				"flowName": "Season Tip-off",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "28eddc41-6a11-4ff8-8ec6-15041aa01e80",
+				"flowName": "Early Adopters",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "c561f66b-5bd8-451c-8686-156073c3fb69",
+				"flowName": "Cosmic",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "b2605806-0d47-439f-ba72-784897470bb0",
+				"flowName": "2021 All-Star Game",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "a3a4f935-4d05-4166-b8c4-ce8e52eb3ca3",
+				"flowName": "Hometown Showdown: Cali vs. NY",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "7b797690-5b53-45a7-b972-bd2d5152654a",
+				"flowName": "Base Set",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "12a8288a-addc-4e5c-8af7-b3ba6e5161d4",
+				"flowName": "Metallic Gold LE",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "a494c64e-9e93-418c-8934-f331ee47a39b",
+				"flowName": "From the Top",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "feead270-621c-4cde-baac-2f6834e9e594",
+				"flowName": "Conference Semifinals",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "d2378dc1-1168-410b-893d-e084170a402e",
+				"flowName": "First Round",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "a156f083-e902-49d3-a113-bd61702c336a",
+				"flowName": "Denied!",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "d4712d31-9030-40de-b1a6-1fb9964348f3",
+				"flowName": "Western Conference Finals",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "5f85e04f-798f-434c-89d4-2b0a575bd652",
+				"flowName": "So Fresh",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "252e83ac-b3a4-407e-82d2-138beb60b5b9",
+				"flowName": "For the Win",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "9c8202c7-698b-4f44-b029-b70ddc49e9dc",
+				"flowName": "Eastern Conference Finals",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "dd7c595c-5a1b-4f43-8493-db0a2bbcc5aa",
+				"flowName": "Got Game",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "3a0ae6ce-f22e-4d98-b1fe-906f859df983",
+				"flowName": "Lace 'Em Up",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "4e166b27-3099-44c3-9de3-cac2b9751692",
+				"flowName": "With the Strip",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "18b2d80e-d38d-4678-9b7f-c2bfb223259e",
+				"flowName": "Rookie Debut",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "2dbc545a-25a5-4208-8e89-bbb6c3e3a364",
+				"flowName": "Throwdowns",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "2ab08547-9f62-4ff4-aff9-1bdc0de8fa3e",
+				"flowName": "The Finals",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "320cae53-d585-4e74-8a66-404fa3543c19",
+				"flowName": "2020 NBA Finals",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "814c5183-596f-41d7-9135-c6b29faa9c6d",
+				"flowName": "Holo MMXX",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "b73fe6f1-ae28-468b-a4b3-4adb68e7d6bc",
+				"flowName": "MVP Moves",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "827f9328-03aa-4cb5-97cd-7b5f2c2386fd",
+				"flowName": "Run It Back",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 1,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "54bc2e0d-91e9-4f4c-9361-a8d7eeefe91e",
+				"flowName": "Deck the Hoops",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "208ae30a-a4fe-42d4-9e51-e6fd1ad2a7a9",
+				"flowName": "Base Set",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "33a4a3a3-a32c-4925-a4e8-7d24e56b105e",
+				"flowName": "Metallic Gold LE",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "ad8e85a4-2240-4604-95f6-be826966d988",
+				"flowName": "Cool Cats",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 2,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "9a009433-a0f7-4f02-80a1-59c2837b7384",
+				"flowName": "Vintage Vibes",
+				"setVisualId": "SET_VISUAL_FANDOM",
+				"flowSeriesNumber": 3,
+				"leagues": [
+				  "NBA",
+				  "WNBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "7e3d08f9-061e-4c37-b58f-7b551b6adaab",
+				"flowName": "Summer of '21",
+				"setVisualId": "SET_VISUAL_FANDOM",
+				"flowSeriesNumber": 3,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "391e23a0-f7b6-469e-b1d0-fc24caaebd4d",
+				"flowName": "WNBA: Best of 2021",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 3,
+				"leagues": [
+				  "WNBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "56bc958c-2d67-4e6e-9fd0-3d578710b9e9",
+				"flowName": "Deck the Hoops",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "7b74be80-e2c9-4044-91b5-bbfd74f1dc5e",
+				"flowName": "Run It Back 2005-06",
+				"setVisualId": "SET_VISUAL_RARE",
+				"flowSeriesNumber": 3,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "69ae4a5a-6ddf-4bcd-9f7f-0d53f604ecd3",
+				"flowName": "WNBA 2021",
+				"setVisualId": "SET_VISUAL_FANDOM",
+				"flowSeriesNumber": 3,
+				"leagues": [
+				  "WNBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "e7b9646c-9997-46c8-909f-2a2b67389023",
+				"flowName": "Base Set",
+				"setVisualId": "SET_VISUAL_COMMON",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "3806ab9e-bd18-4e8e-8534-1d0b05492b2d",
+				"flowName": "NBA All-Star Classics",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  },
+			  {
+				"id": "ddfe1fcb-c3f5-449f-b645-5fc4d308cc64",
+				"flowName": "Holo Icon",
+				"setVisualId": "SET_VISUAL_LEGENDARY",
+				"flowSeriesNumber": 4,
+				"leagues": [
+				  "NBA"
+				],
+				"__typename": "Set"
+			  }
        ],
        "__typename":"Sets"
     }
